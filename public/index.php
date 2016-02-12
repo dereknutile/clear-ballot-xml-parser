@@ -9,7 +9,6 @@
             body {
                 margin: 0;
                 padding: 0;
-                color: #aaa;
                 font-weight: 100;
                 font-family: 'Roboto';
             }
@@ -35,16 +34,21 @@
                 text-align: left;
             }
 
-            .election-meta {
+            .election-summary {
                 border: solid 1px #aaa;
                 background-color: #eee;
                 padding-left: 1em;
                 padding-right: 1em;
             }
 
-            .election-meta>p {
+            .election-summary>p {
                 font-size: 1em;
                 line-height: 1.25em;
+            }
+
+            h5.contest-title {
+                margin: 2em 0 1em;
+                font-size: 1.4em;
             }
         </style>
     </head>
@@ -66,15 +70,10 @@
                  */
                 $election = $xml->Election;
                 $page_title = $election['electionTitle'];
-                $precincts_reported = $election['precinctsReported'];
-                $precincts_total = $election['totalPrecincts'];
-                $precincts_percentage = $election['precinctsReportedPercentage'];
-                $ballots_cast = $election['totalBallotsCast'];
-                $ballots_registered = $election['totalRegistration'];
-                $ballots_percentage = $election['totalCastPercentage'];
-
                 writeHtml($page_title,"h1","election-title");
-                echo '<div class="election-meta">';
+                echo '<div class="election-summary">';
+                writeHtml("Reporting","h2");
+
                 /**
                  * Date and Time
                  */
@@ -88,10 +87,38 @@
                 }
                 writeHtml("Run Date: ".$run_date);
                 writeHtml("Run Time: ".$run_time);
-                echo "</div><!-- /.election-meta -->";
-                // Iterate
-                foreach ($xml->GroupMap->Group as $group) {
-                    writeHtml("The group named <b>".$group['name']."</b> has an ID of <b>".$group['id']."</b>.");
+
+                /**
+                 * Reporting
+                 */
+                $precincts_reported = $election['precinctsReported'];
+                $precincts_total = $election['totalPrecincts'];
+                $precincts_percentage = $election['precinctsReportedPercentage'];
+                writeHtml("Precincts Counted: ".$precincts_reported);
+                writeHtml("Precincts Total: ".$precincts_total);
+                writeHtml("Precincts Percentage: ".$precincts_percentage);
+                $ballots_cast = $election['totalBallotsCast'];
+                $ballots_registered = $election['totalRegistration'];
+                $ballots_percentage = $election['totalCastPercentage'];
+                writeHtml("Ballots Cast: ".$ballots_cast);
+                writeHtml("Ballots Registered: ".$ballots_registered);
+                writeHtml("Ballots Percentage: ".$ballots_percentage);
+
+                echo "</div><!-- /.election-summary -->";
+
+                /**
+                 * Contests
+                 */
+                writeHtml("Contests","h4");
+                foreach ($xml->Election->ContestList->Contest as $contest) {
+                    writeHtml($contest['title'],'h5','contest-title');
+                    writeHtml("Total Ballots Cast: ".$contest['ballotsCast']);
+
+                    foreach($contest->Candidate as $candidate){
+                        $percent = $candidate['votes']/$contest['ballotsCast'];
+
+                        writeHtml($candidate['name']." : ".$candidate['votes']." (".number_format( $percent * 100, 2 )."%)");
+                    }
                 }
             } else {
                 writeHtml($page_title,"h1","election-title");
