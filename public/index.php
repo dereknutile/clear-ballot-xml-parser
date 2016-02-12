@@ -112,12 +112,12 @@
                 writeHtml("Contests","h4");
                 foreach ($xml->Election->ContestList->Contest as $contest) {
                     writeHtml($contest['title'],'h5','contest-title');
-                    writeHtml("Total Ballots Cast: ".$contest['ballotsCast']);
+                    writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
 
                     foreach($contest->Candidate as $candidate){
                         $percent = $candidate['votes']/$contest['ballotsCast'];
 
-                        writeHtml($candidate['name']." : ".$candidate['votes']." (".number_format( $percent * 100, 2 )."%)");
+                        writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
                     }
                 }
             } else {
