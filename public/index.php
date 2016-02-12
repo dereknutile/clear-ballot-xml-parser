@@ -39,7 +39,7 @@
 
     <body>
         <div class="container">
-            <div class="title"><?php echo "Title"; ?></div>
+            <div class="title">PHP XML Parser</div>
 
             <?php
 
