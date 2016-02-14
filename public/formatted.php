@@ -73,19 +73,17 @@
         border: 1px solid #aaa;
         border-radius: 0px;
       }
-#sidebar {
-  border-left: 4px solid #aaa;
-}
-@media (min-width: 979px) {
-  #sidebar.affix {
-    position: fixed;
-    top:85px;
-    width:228px;
-  }
-}
-.affix,.affix-top {
-   position:static;
-}
+
+      @media (min-width: 979px) {
+        #sidebar.affix {
+          position: fixed;
+          top:100px;
+          width:228px;
+        }
+      }
+      .affix,.affix-top {
+         position:static;
+      }
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -173,6 +171,17 @@ echo '</div><!-- /.container -->';
 
 echo '<div class="container">';
 echo '<div class="row">';
+echo '<div class="col-md-3">';
+?>
+<nav class="hidden-print hidden-xs hidden-sm" id="sidebar">
+    <ul class="nav">
+        <li><a href="">United States President and Vice President</a></li>
+        <li><a href="">United States President and Vice President</a></li>
+        <li><a href="">United States President and Vice President</a></li>
+    </ul>
+</nav>
+<?php
+echo '</div><!-- /.col -->';
 echo '<div class="col-md-9">';
             /**
              * Contests
@@ -193,17 +202,6 @@ echo '<div class="col-md-9">';
             writeHtml("No election results found.","h3", "alert alert-warning");
         }
 
-echo '</div><!-- /.col -->';
-echo '<div class="col-md-3">';
-?>
-<nav class="hidden-print hidden-xs hidden-sm" id="sidebar">
-    <ul class="nav">
-        <li><a href="">Test</a></li>
-        <li><a href="">Test</a></li>
-        <li><a href="">Test</a></li>
-    </ul>
-</nav>
-<?php
 echo '</div><!-- /.col -->';
 echo '</div><!-- /.row -->';
 echo '</div><!-- /.container -->';
