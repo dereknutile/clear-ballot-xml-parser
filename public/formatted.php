@@ -29,20 +29,22 @@
       }
 
       p {
-        font-size: 1.3em;
-        line-height: 2em;
+        font-size: 1.1em;
+        line-height: 1.4em;
         color: #011;
         text-align: left;
       }
 
       .election-summary {
-        border: solid 1px #aaa;
+        min-height: 1em;
+        padding: 1em;
+        margin-bottom: 2em;
         background-color: #eee;
-        padding-left: 1em;
-        padding-right: 1em;
+        border: 1px solid #aaa;
+        border-radius: 0px;
       }
 
-      .election-summary>p {
+      .election-summary p {
         font-size: 1em;
         line-height: 1.25em;
       }
@@ -65,24 +67,8 @@
         font-weight: 300;
         color: #aaa;
       }
-      .well {
-        min-height: 1em;
-        padding: 1em;
-        margin-bottom: 2em;
-        background-color: #eee;
-        border: 1px solid #aaa;
-        border-radius: 0px;
-      }
-
-      @media (min-width: 979px) {
-        #sidebar.affix {
-          position: fixed;
-          top:100px;
-          width:228px;
-        }
-      }
-      .affix,.affix-top {
-         position:static;
+      #sidebar {
+        border-right: 4px solid #aaa;
       }
     </style>
 
@@ -140,7 +126,25 @@
                 $run_time = $exploded_report_time[1];
             }
 writeHtml($page_title,"h1","election-title");
-echo '<div class="container well">';
+
+echo '<div class="container">';
+echo '<div class="row">';
+echo '<div class="col-md-4">';
+
+echo '<nav class="hidden-print hidden-xs" id="sidebar">';
+echo '<ul class="nav">';
+echo '<li><a href="">Summary</a></li>';
+foreach ($xml->Election->ContestList->Contest as $contest) {
+  echo '<li><a href="">'.$contest['title'].'</a></li>';
+}
+echo '</ul>';
+echo '</nav>';
+
+echo '</div><!-- /.col -->';
+echo '<div class="col-md-8">';
+writeHtml("Summary","h3");
+
+echo '<div class="election-summary">';
 echo '<div class="row">';
 echo '<div class="col-md-4">';
 writeHtml("Run Date: ".$run_date);
@@ -168,21 +172,6 @@ echo '<div class="col-md-4">';
 echo '</div><!-- /.col -->';
 echo '</div><!-- /.row -->';
 echo '</div><!-- /.container -->';
-
-echo '<div class="container">';
-echo '<div class="row">';
-echo '<div class="col-md-3">';
-?>
-<nav class="hidden-print hidden-xs hidden-sm" id="sidebar">
-    <ul class="nav">
-        <li><a href="">United States President and Vice President</a></li>
-        <li><a href="">United States President and Vice President</a></li>
-        <li><a href="">United States President and Vice President</a></li>
-    </ul>
-</nav>
-<?php
-echo '</div><!-- /.col -->';
-echo '<div class="col-md-9">';
             /**
              * Contests
              */
@@ -257,13 +246,5 @@ echo '</div><!-- /.container -->';
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-$('#sidebar').affix({
-      offset: {
-        // top: $('header').height()
-        top: 300
-      }
-});
-    </script>
   </body>
 </html>
