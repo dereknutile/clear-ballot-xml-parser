@@ -96,11 +96,12 @@
         padding-top: .5em;
         padding-bottom: .5em;
       }
+
       footer.footer {
-          margin-top: 5em;
-          border-top: 1px solid #aaa;
-          padding: 2em 0 3em;
-          background-color: #eee;
+        margin-top: 5em;
+        padding: 2em 0 3em;
+        background-color: #eee;
+        background-image: linear-gradient(#fff, #eee);
       }
 
       .copyright {
