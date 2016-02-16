@@ -145,11 +145,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">[LOGO] Washington County Oregon Elections</a>
+          <a class="navbar-brand" href="/">[LOGO] Washington County Election Results</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://www.co.washington.or.us/AssessmentTaxation/Elections/ElectionsArchive/index.cfm" target="_blank">Archives</a></li>
+            <li><a href="http://www.co.washington.or.us/" target="_blank">County Website</a></li>
+            <li><a href="http://www.co.washington.or.us/assessmenttaxation/elections" target="_blank">Elections</a></li>
+            <li><a href="http://www.co.washington.or.us/AssessmentTaxation/Elections/ElectionsArchive" target="_blank">Archives</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
