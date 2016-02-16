@@ -30,6 +30,20 @@
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
       }
 
+      .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 0px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+      }
+
+      .alert-warning {
+        font-size: 1.25em;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+
       h1.election-title {
         font-family: 'Raleway';
         font-size: 2em;
