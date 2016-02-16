@@ -48,10 +48,21 @@
         font-size: 1em;
         line-height: 1.25em;
       }
+      .contest {
+        border: 1px solid #aaa;
+        margin-bottom: 1em;
+      }
+
+      .contest p {
+        padding: .3em;
+        margin: 0;
+      }
 
       h5.contest-title {
-        margin: 2em 0 1em;
+        margin: 0;
         font-size: 1.4em;
+        background-color: #ddd;
+        padding: .5em;
       }
 
       footer.footer {
@@ -67,8 +78,17 @@
         font-weight: 300;
         color: #aaa;
       }
+
       #sidebar {
-        border-right: 4px solid #aaa;
+        border: 1px solid #ccc;
+      }
+
+      h5.sidebar-title {
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 1.2em;
+        font-weight: 600;
+        background-color: #ccc;
       }
     </style>
 
@@ -131,7 +151,8 @@ echo '<div class="container">';
 echo '<div class="row">';
 echo '<div class="col-md-4">';
 
-echo '<nav class="hidden-print hidden-xs" id="sidebar">';
+echo '<nav class="hidden-print" id="sidebar">';
+echo '<h5 class="sidebar-title">Contests</h5>';
 echo '<ul class="nav">';
 echo '<li><a href="">Summary</a></li>';
 foreach ($xml->Election->ContestList->Contest as $contest) {
