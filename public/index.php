@@ -130,7 +130,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">[LOGO] Washington County Oregon Elections</a>
+          <a class="navbar-brand" href="/">[LOGO] Washington County Oregon Elections</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -174,7 +174,7 @@ echo '<div class="col-md-4">';
 echo '<nav class="hidden-print" id="sidebar">';
 echo '<h5 class="sidebar-title">Contests</h5>';
 echo '<ul class="nav">';
-echo '<li><a href="">Summary</a></li>';
+echo '<li><a href="#summary">Summary</a></li>';
 foreach ($xml->Election->ContestList->Contest as $contest) {
   echo '<li><a href="#id-'.$contest['id'].'">'.$contest['title'].'</a></li>';
 }
@@ -183,6 +183,7 @@ echo '</nav>';
 
 echo '</div><!-- /.col -->';
 echo '<div class="col-md-8">';
+echo '<a name="summary"></a>';
 writeHtml("Summary","h3");
 
 echo '<div class="election-summary">';
