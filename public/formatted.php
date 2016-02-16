@@ -177,6 +177,7 @@ echo '</div><!-- /.container -->';
              */
             writeHtml("Results","h3");
             foreach ($xml->Election->ContestList->Contest as $contest) {
+                echo '<div class="contest">';
                 writeHtml($contest['title'],'h5','contest-title');
                 writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
 
@@ -185,6 +186,7 @@ echo '</div><!-- /.container -->';
 
                     writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
                 }
+                echo '</div><!-- /.contest -->';
             }
         } else {
             writeHtml($page_title,"h1","election-title");
