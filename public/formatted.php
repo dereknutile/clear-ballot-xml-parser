@@ -50,7 +50,6 @@
       }
       .contest {
         border: 1px solid #aaa;
-        margin-bottom: 1em;
       }
 
       .contest p {
@@ -65,6 +64,12 @@
         padding: .5em;
       }
 
+      .back-to-top {
+        text-align: right;
+        margin-bottom: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+      }
       footer.footer {
           margin-top: 5em;
           border-top: 1px solid #aaa;
@@ -111,7 +116,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Washington County, OR Election Results</a>
+          <a class="navbar-brand" href="#">[LOGO] Washington County Oregon Elections</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -121,6 +126,7 @@
       </div>
     </nav>
 
+    <a name="top"></a>
     <div class="container">
         <?php
         $page_title = "Washington County, OR Election Results";
@@ -156,7 +162,7 @@ echo '<h5 class="sidebar-title">Contests</h5>';
 echo '<ul class="nav">';
 echo '<li><a href="">Summary</a></li>';
 foreach ($xml->Election->ContestList->Contest as $contest) {
-  echo '<li><a href="">'.$contest['title'].'</a></li>';
+  echo '<li><a href="#id-'.$contest['id'].'">'.$contest['title'].'</a></li>';
 }
 echo '</ul>';
 echo '</nav>';
@@ -198,6 +204,7 @@ echo '</div><!-- /.container -->';
              */
             writeHtml("Results","h3");
             foreach ($xml->Election->ContestList->Contest as $contest) {
+                echo '<a name="id-'.$contest['id'].'"></a>';
                 echo '<div class="contest">';
                 writeHtml($contest['title'],'h5','contest-title');
                 writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
@@ -208,6 +215,7 @@ echo '</div><!-- /.container -->';
                     writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
                 }
                 echo '</div><!-- /.contest -->';
+                echo '<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>';
             }
         } else {
             writeHtml($page_title,"h1","election-title");
@@ -269,5 +277,21 @@ echo '</div><!-- /.container -->';
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top - 80
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
