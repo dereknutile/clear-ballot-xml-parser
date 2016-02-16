@@ -30,6 +30,41 @@
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
       }
 
+      .navbar-brand {
+        height: 60px;
+      }
+
+      .navbar-default .navbar-brand {
+        color: #0099d7;
+        padding: 5px 15px;
+      }
+
+      .navbar-brand>img {
+        display: inline;
+      }
+
+      .navbar-default .navbar-toggle {
+        border-color: #0099d7;
+      }
+      .navbar-default .navbar-toggle .icon-bar {
+        background-color: #0099d7;
+      }
+
+      .navbar-toggle {
+        border-radius: 0px;
+      }
+
+      @media (min-width: 768px){
+        .navbar-nav>li>a {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      .navbar-default .navbar-nav>li>a:hover {
+        color: #0099d7;
+        background-color: #eee;
+      }
+
       .alert {
         padding: 15px;
         margin-bottom: 20px;
@@ -145,7 +180,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">[LOGO] Washington County Election Results</a>
+          <a class="navbar-brand" href="/"><img src="http://placehold.it/50/0099d7/ffffff/?text=W" /> Washington County Election Results</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
