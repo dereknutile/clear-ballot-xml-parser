@@ -28,8 +28,8 @@
             }
 
             p {
-                font-size: 1.3em;
-                line-height: 2em;
+                font-size: 1em;
+                line-height: 1.3em;
                 color: #011;
                 text-align: left;
             }
@@ -72,7 +72,7 @@
                 $page_title = $election['electionTitle'];
                 writeHtml($page_title,"h1","election-title");
                 echo '<div class="election-summary">';
-                writeHtml("Reporting","h2");
+                // writeHtml("Reporting","h2");
 
                 /**
                  * Date and Time
