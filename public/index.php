@@ -1,153 +1,311 @@
-<html>
-    <head>
-        <title>XML Parser</title>
 
-        <link href='//fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Washington County Oregon Election Results">
 
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-weight: 100;
-                font-family: 'Roboto';
-            }
+    <title>Washington County Oregon Election Results</title>
+    <link href='//fonts.googleapis.com/css?family=Raleway:100,400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+      body {
+        padding-top: 70px;
+        font-weight: 300;
+        font-family: 'Roboto';
+        background-color: #eceff1;
+      }
 
-            .container {
-                margin-left: auto;
-                margin-right: auto;
-                width: 75%;
-            }
+      .navbar-default {
+        background-color: #fff;
+        border-bottom: 1px solid #aaa;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.10),0 2px 2px rgba(0,0,0,0.20);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      }
 
-            h1.election-title {
-                padding-top: 1em;
-                font-family: 'Raleway';
-                font-size: 2em;
-                color: #001;
-                margin-bottom: 1em;
-            }
+      h1.election-title {
+        font-family: 'Raleway';
+        font-size: 2em;
+        font-weight: 400;
+        color: #001;
+        margin-bottom: 1em;
+      }
 
-            p {
-                font-size: 1em;
-                line-height: 1.3em;
-                color: #011;
-                text-align: left;
-            }
+      p {
+        font-size: 1.1em;
+        line-height: 1.4em;
+        color: #011;
+        text-align: left;
+      }
 
-            .election-summary {
-                border: solid 1px #aaa;
-                background-color: #eee;
-                padding-left: 1em;
-                padding-right: 1em;
-            }
+      .election-summary {
+        min-height: 1em;
+        padding: 1em;
+        margin-bottom: 2em;
+        border: 1px solid #ddd;
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+      }
 
-            .election-summary>p {
-                font-size: 1em;
-                line-height: 1.25em;
-            }
+      .election-summary p {
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
+      .contest {
+        border: 1px solid #ddd;
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+      }
 
-            h5.contest-title {
-                margin: 2em 0 1em;
-                font-size: 1.4em;
-            }
-        </style>
-    </head>
+      .contest p {
+        padding: .3em;
+        margin: 0;
+      }
 
-    <body>
-        <div class="container">
-            <?php
-            $page_title = "Washington County, OR Election Results";
-            // Set a variable for the source data directory
-            $data_directory = __DIR__.'/../data';
+      h5.contest-title {
+        margin: 0;
+        font-size: 1.4em;
+        background-color: #ddd;
+        padding: .5em;
+      }
 
-            // Load the target xml file into an XML object using simplexml_load_file
-            // if the file is missing it returns false
-            $xml = simplexml_load_file($data_directory.'/import.xml' );
+      .back-to-top {
+        text-align: right;
+        margin-bottom: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+      }
+      footer.footer {
+          margin-top: 5em;
+          border-top: 1px solid #aaa;
+          padding: 2em 0 3em;
+          background-color: #eee;
+      }
 
-            if($xml){
-                /**
-                 * Election
-                 */
-                $election = $xml->Election;
-                $page_title = $election['electionTitle'];
-                writeHtml($page_title,"h1","election-title");
-                echo '<div class="election-summary">';
-                // writeHtml("Reporting","h2");
+      .copyright {
+        margin-top: 2em;
+        text-align: center;
+        font-weight: 300;
+        color: #aaa;
+      }
 
-                /**
-                 * Date and Time
-                 */
-                $report_time = $xml->ReportTime;
-                $run_date = date('Y-m-d');
-                $run_time = date('hh:mm:ss');
-                if($report_time){
-                    $exploded_report_time = explode("T", $report_time);
-                    $run_date = $exploded_report_time[0];
-                    $run_time = $exploded_report_time[1];
-                }
-                writeHtml("Run Date: ".$run_date);
-                writeHtml("Run Time: ".$run_time);
+      #sidebar {
+        border: 1px solid #ddd;
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+      }
 
-                /**
-                 * Reporting
-                 */
-                $precincts_reported = $election['precinctsReported'];
-                $precincts_total = $election['totalPrecincts'];
-                $precincts_percentage = $election['precinctsReportedPercentage'];
-                writeHtml("Precincts Counted: ".$precincts_reported);
-                writeHtml("Precincts Total: ".$precincts_total);
-                writeHtml("Precincts Percentage: ".$precincts_percentage);
-                $ballots_cast = $election['totalBallotsCast'];
-                $ballots_registered = $election['totalRegistration'];
-                $ballots_percentage = $election['totalCastPercentage'];
-                writeHtml("Ballots Cast: ".$ballots_cast);
-                writeHtml("Ballots Registered: ".$ballots_registered);
-                writeHtml("Ballots Percentage: ".$ballots_percentage);
+      h5.sidebar-title {
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 1.2em;
+        font-weight: 600;
+        background-color: #ddd;
+      }
+    </style>
 
-                echo "</div><!-- /.election-summary -->";
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-                /**
-                 * Contests
-                 */
-                writeHtml("Contests","h4");
-                foreach ($xml->Election->ContestList->Contest as $contest) {
-                    writeHtml($contest['title'],'h5','contest-title');
-                    writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
+  <body>
 
-                    foreach($contest->Candidate as $candidate){
-                        $percent = $candidate['votes']/$contest['ballotsCast'];
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">[LOGO] Washington County Oregon Elections</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.co.washington.or.us/AssessmentTaxation/Elections/ElectionsArchive/index.cfm" target="_blank">Archives</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-                        writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
-                    }
-                }
-            } else {
-                writeHtml($page_title,"h1","election-title");
-                writeHtml("No data found.","h3");
-            }
+    <a name="top"></a>
+    <div class="container">
+        <?php
+        $page_title = "Washington County, OR Election Results";
+        // Set a variable for the source data directory
+        $data_directory = __DIR__.'/../data';
 
+        // Load the target xml file into an XML object using simplexml_load_file
+        // if the file is missing it returns false
+        $xml = simplexml_load_file($data_directory.'/import.xml' );
+
+        if($xml){
             /**
-             * Dump a variable with a little HTML dressing for readability
+             * Election
              */
-            function dd($string){
-                echo '<pre>';
-                var_dump($string);
-                echo '</pre>';
-                echo '<hr />';
+            $election = $xml->Election;
+            $page_title = $election['electionTitle'];
+            $report_time = $xml->ReportTime;
+            $run_date = date('Y-m-d');
+            $run_time = date('hh:mm:ss');
+            if($report_time){
+                $exploded_report_time = explode("T", $report_time);
+                $run_date = $exploded_report_time[0];
+                $run_time = $exploded_report_time[1];
             }
+writeHtml($page_title,"h1","election-title");
 
+echo '<div class="container">';
+echo '<div class="row">';
+echo '<div class="col-md-4">';
+
+echo '<nav class="hidden-print" id="sidebar">';
+echo '<h5 class="sidebar-title">Contests</h5>';
+echo '<ul class="nav">';
+echo '<li><a href="">Summary</a></li>';
+foreach ($xml->Election->ContestList->Contest as $contest) {
+  echo '<li><a href="#id-'.$contest['id'].'">'.$contest['title'].'</a></li>';
+}
+echo '</ul>';
+echo '</nav>';
+
+echo '</div><!-- /.col -->';
+echo '<div class="col-md-8">';
+writeHtml("Summary","h3");
+
+echo '<div class="election-summary">';
+echo '<div class="row">';
+echo '<div class="col-md-4">';
+writeHtml("Run Date: ".$run_date);
+writeHtml("Run Time: ".$run_time);
+echo '</div><!-- /.col -->';
+
+
+            $precincts_reported = $election['precinctsReported'];
+            $precincts_total = $election['totalPrecincts'];
+            $precincts_percentage = $election['precinctsReportedPercentage'];
+
+echo '<div class="col-md-4">';
+            writeHtml("Precincts Total: ".$precincts_total);
+            writeHtml("Precincts Counted: ".$precincts_reported);
+            writeHtml("Precincts Percentage: ".$precincts_percentage);
+echo '</div><!-- /.col -->';
+
+            $ballots_cast = $election['totalBallotsCast'];
+            $ballots_registered = $election['totalRegistration'];
+            $ballots_percentage = $election['totalCastPercentage'];
+echo '<div class="col-md-4">';
+            writeHtml("Ballots Cast: ".$ballots_cast);
+            writeHtml("Ballots Registered: ".$ballots_registered);
+            writeHtml("Ballots Percentage: ".$ballots_percentage);
+echo '</div><!-- /.col -->';
+echo '</div><!-- /.row -->';
+echo '</div><!-- /.container -->';
             /**
-             * Dump a simple string into an HTML wrapper - tag defaults to <p>
+             * Contests
              */
-            function writeHtml($string, $tag = "p", $class = null, $id = null){
-                echo "<".$tag;
-                echo ($class ? ' class="'.$class.'"' : '');
-                echo ($id ? ' id="'.$id.'"' : '');
-                echo ">";
-                echo $string;
-                echo "</".$tag.">";
+            writeHtml("Results","h3");
+            foreach ($xml->Election->ContestList->Contest as $contest) {
+                echo '<a name="id-'.$contest['id'].'"></a>';
+                echo '<div class="contest">';
+                writeHtml($contest['title'],'h5','contest-title');
+                writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
+
+                foreach($contest->Candidate as $candidate){
+                    $percent = $candidate['votes']/$contest['ballotsCast'];
+
+                    writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
+                }
+                echo '</div><!-- /.contest -->';
+                echo '<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>';
             }
-            ?>
+        } else {
+            writeHtml($page_title,"h1","election-title");
+            writeHtml("No election results found.","h3", "alert alert-warning");
+        }
+
+echo '</div><!-- /.col -->';
+echo '</div><!-- /.row -->';
+echo '</div><!-- /.container -->';
+
+        /**
+         * Dump a variable with a little HTML dressing for readability
+         */
+        function dd($string){
+            echo '<pre>';
+            var_dump($string);
+            echo '</pre>';
+            echo '<hr />';
+        }
+
+        /**
+         * Dump a simple string into an HTML wrapper - tag defaults to <p>
+         */
+        function writeHtml($string, $tag = "p", $class = null, $id = null){
+            echo "<".$tag;
+            echo ($class ? ' class="'.$class.'"' : '');
+            echo ($id ? ' id="'.$id.'"' : '');
+            echo ">";
+            echo $string;
+            echo "</".$tag.">";
+        }
+        ?>
 
         </div><!-- /.container -->
-    </body>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <address>
+              <h5>Washington County Elections Office</h5>
+              3700 SW Murray Blvd<br />
+              Suite 101<br />
+              Beaverton, OR 97005
+            </address>
+          </div>
+          <div class="col-md-6">
+            <address>
+              <h5>Contact Us</h5>
+              <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (503) 846-5800<br />
+              <abbr title="Fax"><i class="fa fa-fax"></i></abbr> (503) 846-5810<br />
+              <abbr title="Email"><i class="fa fa-envelope"></i></abbr> <a href="http://www.co.washington.or.us/divisionemailform.cfm?id=5" target="_blank">Email</a>
+            </address>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <p class="copyright">Copyright Washington County 2016</p>
+        </div><!-- /.row -->
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top - 80
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
