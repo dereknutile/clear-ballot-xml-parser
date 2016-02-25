@@ -1,7 +1,4 @@
 <?php
-    // Application Settings
-    $app_title = "TITLE OF APP";
-
     // Set core directories
     $data_directory = __DIR__.'/../data/';
     $app_directory = __DIR__.'/../app/';
