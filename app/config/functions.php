@@ -12,7 +12,7 @@
     }
 
     /**
-    * Simple functiont to build and echo html
+    * Simple function to output html
     */
     function writeHtml($string, $tag = "p", $class = null, $id = null){
         echo "<".$tag;
@@ -21,6 +21,20 @@
         echo ">";
         echo $string;
         echo "</".$tag.">";
+    }
+
+    /**
+    * Simple function that builds html and returns the string
+    */
+    function returnHtml($string, $tag = "p", $class = null, $id = null){
+        $return  ='';
+        $return .= "<".$tag;
+        $return .= ($class ? ' class="'.$class.'"' : '');
+        $return .= ($id ? ' id="'.$id.'"' : '');
+        $return .= ">";
+        $return .= $string;
+        $return .= "</".$tag.">";
+        return $return;
     }
 
 ?>
