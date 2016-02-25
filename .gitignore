@@ -1,9 +1,8 @@
+# common ignore directives
 .DS_Store
 *~
 /.vagrant
-/tmp
-/*.gem
-/.bundle
-/vendor
 
+# protect the secret files
+config.php
 /data/*.xml
