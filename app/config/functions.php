@@ -37,4 +37,11 @@
         return $return;
     }
 
+    function make_file($file = 'index.html'){
+        file_put_contents($file,'hi');
+    }
+
+    // file_put_contents($file, $index);
+    // FILE_APPEND | LOCK_EX
+
 ?>

@@ -5,10 +5,21 @@
     require(__DIR__.'/../app/bootstrap.php');
 
     /**
+     * Creates an empty output file that the rest of this script will target and
+     * append.
+     */
+    create_output_file();
+
+    /**
      * Partials
      */
     include($partials_directory.'head.html');
     include($partials_directory.'nav.html');
+
+    /**
+     * Optional variable for the next run
+     */
+    // $next = $_GET["next"];
 ?>
 
 <?php

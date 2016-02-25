@@ -1,7 +1,12 @@
 <?php
     // Set core directories
-    $data_directory = __DIR__.'/../data/';
     $app_directory = __DIR__.'/../app/';
-    $partials_directory = __DIR__.'/../partials/';
     $config_directory = __DIR__.'/../config/';
+    $data_directory = __DIR__.'/../../data/';
+    $output_directory = __DIR__.'/../../public/';
+    $partials_directory = __DIR__.'/../partials/';
+
+    // Set file names
+    $input_file = 'import.xml';
+    $output_file = 'index.html';
 ?>
