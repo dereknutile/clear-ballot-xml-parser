@@ -1,9 +1,13 @@
 <?php
     /**
-     * Bootstrapper
+     * Bootstrap the application
      */
-    // require(__DIR__.'/../app/config/config.php');
-    require(__DIR__.'/../app/config/example.config.php');
+    require(__DIR__.'/../app/config/config.php');
 
-    echo "Dir: ".$partials_directory;
+    /**
+     * Partials
+     */
+    include($partials_directory.'head.php');
+    include($partials_directory.'content.php');
+    include($partials_directory.'foot.php');
 ?>
