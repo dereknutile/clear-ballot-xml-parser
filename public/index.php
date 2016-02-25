@@ -2,7 +2,7 @@
     /**
      * Bootstrap the application
      */
-    require(__DIR__.'/../app/config/config.php');
+    require(__DIR__.'/../app/bootstrap.php');
 
     /**
      * Partials
@@ -11,19 +11,17 @@
     include($partials_directory.'nav.html');
 ?>
 
-
 <?php
-// $page_title = "Washington County, OR Election Results";
-// Set a variable for the source data directory
-// $data_directory = __DIR__.'/../data';
+    // Set default page title
+    $page_title = "Washington County Election Results";
 
-// Load the target xml file into an XML object using simplexml_load_file
-// if the file is missing it returns false
-$xml = simplexml_load_file($data_directory.'/import.xml' );
+    // Load the target xml file into an XML object using simplexml_load_file
+    // if the file is missing it returns false
+    $xml = simplexml_load_file($data_directory.'/import.xml' );
 
-if($xml){
+    if($xml){
         /**
-         * Election
+         * Set election variables
          */
         $election = $xml->Election;
         $page_title = $election['electionTitle'];
@@ -31,9 +29,9 @@ if($xml){
         $run_date = date('Y-m-d');
         $run_time = date('hh:mm:ss');
         if($report_time){
-                $exploded_report_time = explode("T", $report_time);
-                $run_date = $exploded_report_time[0];
-                $run_time = $exploded_report_time[1];
+            $exploded_report_time = explode("T", $report_time);
+            $run_date = $exploded_report_time[0];
+            $run_time = $exploded_report_time[1];
         }
 
         writeHtml($page_title,"h1","election-title");
@@ -91,30 +89,27 @@ if($xml){
          */
         writeHtml("Results","h3");
         foreach ($xml->Election->ContestList->Contest as $contest) {
-                echo '<a name="id-'.$contest['id'].'"></a>';
-                echo '<div class="contest">';
-                writeHtml($contest['title'],'h5','contest-title');
-                writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
+            echo '<a name="id-'.$contest['id'].'"></a>';
+            echo '<div class="contest">';
+            writeHtml($contest['title'],'h5','contest-title');
+            writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
 
-                foreach($contest->Candidate as $candidate){
-                        $percent = $candidate['votes']/$contest['ballotsCast'];
-
-                        writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
-                }
-                echo '</div><!-- /.contest -->';
-                echo '<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>';
+            foreach($contest->Candidate as $candidate){
+                $percent = $candidate['votes']/$contest['ballotsCast'];
+                writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
+            }
+            echo '</div><!-- /.contest -->';
+            echo '<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>';
         }
-} else {
+    } else {
         writeHtml($page_title,"h1","election-title");
         writeHtml("No election results found.","h3", "alert alert-warning");
-}
+    }
 
-echo '</div><!-- /.col -->';
-echo '</div><!-- /.row -->';
-echo '</div><!-- /.container -->';
+    echo '</div><!-- /.col -->';
+    echo '</div><!-- /.row -->';
+    echo '</div><!-- /.container -->';
 ?>
-
-
 
 <?php
     include($partials_directory.'foot.html');
