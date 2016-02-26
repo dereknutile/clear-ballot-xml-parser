@@ -7,6 +7,9 @@
     $partials_directory = __DIR__.'/../partials/';
 
     // Set file names
-    $input_file = 'import.xml';
+    $import_file = 'import.xml';
     $output_file = 'index.html';
+
+    // Set default applications strings
+    $app_title = 'Application Title';
 ?>
