@@ -194,129 +194,110 @@
 
     <a name="top"></a>
     <div class="container">
-        <?php
-        $page_title = "Washington County, OR Election Results";
-        // Set a variable for the source data directory
-        $data_directory = __DIR__.'/../data';
-
-        // Load the target xml file into an XML object using simplexml_load_file
-        // if the file is missing it returns false
-        $xml = simplexml_load_file($data_directory.'/import.xml' );
-
-        if($xml){
-            /**
-             * Election
-             */
-            $election = $xml->Election;
-            $page_title = $election['electionTitle'];
-            $report_time = $xml->ReportTime;
-            $run_date = date('Y-m-d');
-            $run_time = date('hh:mm:ss');
-            if($report_time){
-                $exploded_report_time = explode("T", $report_time);
-                $run_date = $exploded_report_time[0];
-                $run_time = $exploded_report_time[1];
-            }
-writeHtml($page_title,"h1","election-title");
-
-echo '<div class="container">';
-echo '<div class="row">';
-echo '<div class="col-md-4">';
-
-echo '<nav class="hidden-print" id="sidebar">';
-echo '<h5 class="sidebar-title">Contests</h5>';
-echo '<ul class="nav">';
-echo '<li><a href="#summary">Summary</a></li>';
-foreach ($xml->Election->ContestList->Contest as $contest) {
-  echo '<li><a href="#id-'.$contest['id'].'">'.$contest['title'].'</a></li>';
-}
-echo '</ul>';
-echo '</nav>';
-
-echo '</div><!-- /.col -->';
-echo '<div class="col-md-8">';
-echo '<a name="summary"></a>';
-writeHtml("Summary","h3");
-
-echo '<div class="election-summary">';
-echo '<div class="row">';
-echo '<div class="col-md-4">';
-writeHtml("Run Date: ".$run_date);
-writeHtml("Run Time: ".$run_time);
-echo '</div><!-- /.col -->';
 
 
-            $precincts_reported = $election['precinctsReported'];
-            $precincts_total = $election['totalPrecincts'];
-            $precincts_percentage = $election['precinctsReportedPercentage'];
 
-echo '<div class="col-md-4">';
-            writeHtml("Precincts Total: ".$precincts_total);
-            writeHtml("Precincts Counted: ".$precincts_reported);
-            writeHtml("Precincts Percentage: ".$precincts_percentage);
-echo '</div><!-- /.col -->';
+<h1 class="election-title">Washington County, Oregon General Election Nov 3, 2015</h1>
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<nav class="hidden-print" id="sidebar">
+<h5 class="sidebar-title">Contests</h5>
+<ul class="nav">
+<li><a href="#summary">Summary</a></li>
+<li><a href="#id-1">34-235 Replacement Local Option Levy to Support ...</a></li>
+<li><a href="#id-2">34-236 Renewal of Local Option Levy for Countywide Public ...</a></li>
+<li><a href="#id-3">34-239 Amends Charter Allowing Council to Seek City ...</a></li>
+<li><a href="#id-4">34-240 Amends Charter to Allow Additional Term Question: ...</a></li>
+<li><a href="#id-5">34-241 Authorizes General Obligation Bonds For Tigard ...</a></li>
+<li><a href="#id-6">34-242 Proposal to Annex 101.79 Acres into the City of ...</a></li>
+<li><a href="#id-7">3-468 Vote on forming a Coffee Creek Urban Renewal ...</a></li>
+</ul>
+</nav>
+</div><!-- /.col -->
+<div class="col-md-8">
+<a name="summary"></a>
+<h3>Summary</h3>
+<div class="election-summary">
+<div class="row">
+<div class="col-md-4">
+<p>Run Date: 2016-02-02</p>
+<p>Run Time: 10:11:05</p>
+</div><!-- /.col -->
+<div class="col-md-4">
+<p>Precincts Total: 157</p>
+<p>Precincts Counted: 0</p>
+<p>Precincts Percentage: 0.0</p>
+</div><!-- /.col -->
+<div class="col-md-4">
+<p>Ballots Cast: 100769</p>
+<p>Ballots Registered: </p>
+<p>Ballots Percentage: </p>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+<h3>Results</h3>
+<a name="id-1"></a>
+<div class="contest">
+<h5 class="contest-title">34-235 Replacement Local Option Levy to Support ...</h5>
+<p>Total Ballots Cast: <strong>100769</strong></p>
+<p>Yes: <strong>64126</strong> (63.64%)</p>
+<p>No: <strong>36222</strong> (35.95%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-2"></a>
+<div class="contest">
+<h5 class="contest-title">34-236 Renewal of Local Option Levy for Countywide Public ...</h5>
+<p>Total Ballots Cast: <strong>100769</strong></p>
+<p>Yes: <strong>72846</strong> (72.29%)</p>
+<p>No: <strong>27397</strong> (27.19%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-3"></a>
+<div class="contest">
+<h5 class="contest-title">34-239 Amends Charter Allowing Council to Seek City ...</h5>
+<p>Total Ballots Cast: <strong>11422</strong></p>
+<p>Yes: <strong>5178</strong> (45.33%)</p>
+<p>No: <strong>5733</strong> (50.19%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-4"></a>
+<div class="contest">
+<h5 class="contest-title">34-240 Amends Charter to Allow Additional Term Question: ...</h5>
+<p>Total Ballots Cast: <strong>11422</strong></p>
+<p>Yes: <strong>2258</strong> (19.77%)</p>
+<p>No: <strong>8743</strong> (76.55%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-5"></a>
+<div class="contest">
+<h5 class="contest-title">34-241 Authorizes General Obligation Bonds For Tigard ...</h5>
+<p>Total Ballots Cast: <strong>11422</strong></p>
+<p>Yes: <strong>3877</strong> (33.94%)</p>
+<p>No: <strong>7443</strong> (65.16%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-6"></a>
+<div class="contest">
+<h5 class="contest-title">34-242 Proposal to Annex 101.79 Acres into the City of ...</h5>
+<p>Total Ballots Cast: <strong>4965</strong></p>
+<p>Yes: <strong>1520</strong> (30.61%)</p>
+<p>No: <strong>3416</strong> (68.80%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+<a name="id-7"></a>
+<div class="contest">
+<h5 class="contest-title">3-468 Vote on forming a Coffee Creek Urban Renewal ...</h5>
+<p>Total Ballots Cast: <strong>48</strong></p>
+<p>Yes: <strong>28</strong> (58.33%)</p>
+<p>No: <strong>17</strong> (35.42%)</p>
+</div><!-- /.contest -->
+<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
 
-            $ballots_cast = $election['totalBallotsCast'];
-            $ballots_registered = $election['totalRegistration'];
-            $ballots_percentage = $election['totalCastPercentage'];
-echo '<div class="col-md-4">';
-            writeHtml("Ballots Cast: ".$ballots_cast);
-            writeHtml("Ballots Registered: ".$ballots_registered);
-            writeHtml("Ballots Percentage: ".$ballots_percentage);
-echo '</div><!-- /.col -->';
-echo '</div><!-- /.row -->';
-echo '</div><!-- /.container -->';
-            /**
-             * Contests
-             */
-            writeHtml("Results","h3");
-            foreach ($xml->Election->ContestList->Contest as $contest) {
-                echo '<a name="id-'.$contest['id'].'"></a>';
-                echo '<div class="contest">';
-                writeHtml($contest['title'],'h5','contest-title');
-                writeHtml("Total Ballots Cast: <strong>".$contest['ballotsCast']."</strong>");
-
-                foreach($contest->Candidate as $candidate){
-                    $percent = $candidate['votes']/$contest['ballotsCast'];
-
-                    writeHtml($candidate['name'].": <strong>".$candidate['votes']."</strong> (".number_format( $percent * 100, 2 )."%)");
-                }
-                echo '</div><!-- /.contest -->';
-                echo '<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>';
-            }
-        } else {
-            writeHtml($page_title,"h1","election-title");
-            writeHtml("No election results found.","h3", "alert alert-warning");
-        }
-
-echo '</div><!-- /.col -->';
-echo '</div><!-- /.row -->';
-echo '</div><!-- /.container -->';
-
-        /**
-         * Dump a variable with a little HTML dressing for readability
-         */
-        function dd($string){
-            echo '<pre>';
-            var_dump($string);
-            echo '</pre>';
-            echo '<hr />';
-        }
-
-        /**
-         * Dump a simple string into an HTML wrapper - tag defaults to <p>
-         */
-        function writeHtml($string, $tag = "p", $class = null, $id = null){
-            echo "<".$tag;
-            echo ($class ? ' class="'.$class.'"' : '');
-            echo ($id ? ' id="'.$id.'"' : '');
-            echo ">";
-            echo $string;
-            echo "</".$tag.">";
-        }
-        ?>
-
-        </div><!-- /.container -->
+    </div><!-- /.container -->
     <footer class="footer">
       <div class="container">
         <div class="row">
