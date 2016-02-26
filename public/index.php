@@ -12,9 +12,10 @@
     /**
      * Set class variables
      */
-    $e->importFile = $data_directory.$import;
+    $e->importFile = $data_directory.$import_file;
     $e->outputFile = $output_directory.$output_file;
     $e->partialsDirectory = $partials_directory;
+    $e->appTitle = $app_title;
 
     /**
      * Build the html string
@@ -27,5 +28,6 @@
     /**
      * Write the completed html string
      */
-    $e->writeOutputFile();
+    $e->writeOutputFile(false);
+    $e->dd("Parse Complete.")
 ?>
