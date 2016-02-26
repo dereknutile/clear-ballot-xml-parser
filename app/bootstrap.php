@@ -7,5 +7,5 @@
     /**
      * Load common functions
      */
-    require(__DIR__.'/config/functions.php');
+    require(__DIR__.'/washco/Election.php');
 ?>
