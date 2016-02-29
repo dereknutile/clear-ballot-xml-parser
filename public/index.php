@@ -16,6 +16,7 @@
     $e->outputFile = $output_directory.$output_file;
     $e->partialsDirectory = $partials_directory;
     $e->appTitle = $app_title;
+    $e->logoUrl = $logo_url;
 
     /**
      * Build the html string
