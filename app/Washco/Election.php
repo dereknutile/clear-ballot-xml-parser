@@ -74,8 +74,8 @@ class Election {
                 $this->appendOutputString('<img src="'.$this->logoUrl.'" class="img-responsive img-center img-padded" />');
             }
 
-            $this->appendOutputString('<nav class="hidden-print" id="sidebar">');
-            $this->appendOutputString('<h5 class="sidebar-title">Contests</h5>');
+            $this->appendOutputString('<nav class="hidden-print sidebar">');
+            $this->appendOutputString('<h5 class="sidebar-heading">Contests</h5>');
             $this->appendOutputString('<ul class="nav">');
             $this->appendOutputString('<li><a href="#summary">Summary</a></li>');
             foreach ($xml->Election->ContestList->Contest as $contest) {
@@ -86,7 +86,9 @@ class Election {
 
             $this->appendOutputString('</div><!-- /.col -->');
             $this->appendOutputString('<div class="col-md-9">');
-            $this->appendOutputString('<h1 class="election-title">'.$page_title.'</h1>');
+            $this->appendOutputString('<div class="page-header">');
+            $this->appendOutputString('<h1>'.$page_title.'</h1>');
+            $this->appendOutputString('</div>');
             $this->appendOutputString('<a name="summary"></a>');
             $this->appendOutputString('<h3>Summary</h3>');
 
