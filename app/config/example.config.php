@@ -12,4 +12,5 @@
 
     // Set default applications strings
     $app_title = 'Application Title';
+    $logo_url = '/assets/img/logo.png';
 ?>
