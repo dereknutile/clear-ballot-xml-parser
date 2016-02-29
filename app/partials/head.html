@@ -8,13 +8,14 @@
         <meta name="author" content="Washington County Oregon Election Results">
 
         <title>Washington County Oregon Election Results</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Start custom css -->
-        <style>/* Global Reset */
+        <style>
+/* Global Reset */
 * {
   margin: 0;
   padding: 0; }
@@ -23,14 +24,20 @@ html, body {
   height: 100%;
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
-body {
-    padding-top: 70px; }
+body.fixed-navbar {
+  padding-top: 70px; }
 
-p {
+p, ul, ol {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   line-height: 1.5em;
   margin-bottom: 1em; }
+
+ol, ul {
+  margin-left: 18px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Slab", Times, serif; }
 
 a {
   color: #9c5221; }
@@ -56,39 +63,81 @@ a:visited {
 .navbar-inverse .navbar-nav > li > a {
   color: #bebebe; }
 
-.navbar-inverse .navbar-brand {
+.navbar-brand {
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff; }
+  color: #354b56; }
 
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 16px;
-  }
-}
+.navbar-inverse .navbar-brand {
+  color: white; }
+
+.navbar-toggle {
+  border-radius: 0px; }
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px; } }
+
+.page-header {
+  text-shadow: 1px 1px 1px #bebebe; }
 
 .alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 0px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);}
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.alert-warning {
-    font-size: 1.25em;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #ddd; }
+.btn {
+  border-radius: 0px; }
 
-.page-header h1 {
-  font-size: 30px;}
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0px; }
+
+.label {
+  border-radius: 0em; }
+
+.img-thumbnail {
+  border: 1px solid #bebebe;
+  border-radius: 0px; }
+
+.nav-pills > li > a {
+  border-radius: 0px; }
+
+.dropdown-menu {
+  border-radius: 0px; }
+
+.progress {
+  border-radius: 0px; }
+
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+
+.list-unstyled {
+  margin-left: 0px; }
+
+.panel {
+  border-radius: 0px; }
+
+.panel-heading {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f1f0ed;
+  border: 1px solid #faf2f7;
+  border-radius: 0px; }
+
+.jumbotron {
+  color: inherit;
+  background-color: #f3f1ec; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-h1, h2, h3, h4, h5 {
-  font-family: "Roboto Slab", Times, serif;
-  text-shadow: 1px 1px 1px #bebebe; }
-
 .text-shadow-dark {
   text-shadow: 1px 1px 1px black; }
 
@@ -103,6 +152,7 @@ img.img-center {
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: #dbd6c7;
+  border: 1px solid #a39c86;
   padding-bottom: 2em; }
 
 .sidebar li {
@@ -114,13 +164,15 @@ img.img-center {
   display: block; }
 
 .sidebar li > a:hover {
-  background-color: #e0b545;
+  background-color: #aaa38f;
+  color: #693716;
   text-decoration: none;
   transition: background-color 0.5s ease; }
 
 .sidebar-heading {
-  padding: 1em .5em;
+  padding: .8em .5em;
   background-color: #a39c86;
+  margin-top: 0px;
   text-transform: uppercase; }
 
 .footer {
@@ -132,8 +184,8 @@ img.img-center {
   padding-bottom: 4em; }
 
 .footer a {
-    color: #fff;
-    text-decoration: underline;}
+  color: white;
+  text-decoration: underline; }
 
 .copyright {
   padding-top: 5em;
@@ -142,6 +194,10 @@ img.img-center {
   font-size: .9em;
   color: #edcce2; }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* application specific */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .election-summary {
     min-height: 1em;
     padding: 1em;
@@ -176,6 +232,10 @@ h5.contest-title {
     margin-bottom: 1em;
     padding-top: .5em;
     padding-bottom: .5em; }
+
+.page-header h1{
+    font-size: 30px;
+}
         </style><!-- End custom css -->
 
 
@@ -186,5 +246,5 @@ h5.contest-title {
         <![endif]-->
     </head>
 
-<body>
+<body class="fixed-navbar">
     <!-- end head partial -->

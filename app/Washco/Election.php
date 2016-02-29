@@ -74,8 +74,8 @@ class Election {
             }
 
             $this->appendOutputString('<nav class="hidden-print sidebar">');
-            $this->appendOutputString('<h5 class="sidebar-heading">Contests</h5>');
-            $this->appendOutputString('<ul class="nav">');
+            $this->appendOutputString('<h4 class="sidebar-heading">Contests</h4>');
+            $this->appendOutputString('<ul class="list-unstyled">');
             $this->appendOutputString('<li><a href="#summary">Summary</a></li>');
             foreach ($xml->Election->ContestList->Contest as $contest) {
                 $this->appendOutputString('<li><a href="#id-'.$contest['id'].'">'.$contest['title'].'</a></li>');
