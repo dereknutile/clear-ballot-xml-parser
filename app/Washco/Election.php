@@ -3,7 +3,9 @@ namespace Washco;
 
 class Election {
 
+    // Application variables
     public $appTitle = 'Washington County Election Results';
+    public $logoUrl = '';
 
     // Full path to data import file
     public $importFile = '';
@@ -65,11 +67,12 @@ class Election {
                 $run_time = $exploded_report_time[1];
             }
 
-            $this->appendOutputString('<h1 class="election-title">'.$page_title.'</h1>');
-
             $this->appendOutputString('<div class="container">');
             $this->appendOutputString('<div class="row">');
-            $this->appendOutputString('<div class="col-md-4">');
+            $this->appendOutputString('<div class="col-md-3">');
+            if(strlen($this->logoUrl)>0){
+                $this->appendOutputString('<img src="'.$this->logoUrl.'" class="img-responsive img-center img-padded" />');
+            }
 
             $this->appendOutputString('<nav class="hidden-print" id="sidebar">');
             $this->appendOutputString('<h5 class="sidebar-title">Contests</h5>');
@@ -82,7 +85,8 @@ class Election {
             $this->appendOutputString('</nav>');
 
             $this->appendOutputString('</div><!-- /.col -->');
-            $this->appendOutputString('<div class="col-md-8">');
+            $this->appendOutputString('<div class="col-md-9">');
+            $this->appendOutputString('<h1 class="election-title">'.$page_title.'</h1>');
             $this->appendOutputString('<a name="summary"></a>');
             $this->appendOutputString('<h3>Summary</h3>');
 
@@ -133,6 +137,9 @@ class Election {
                 $this->appendOutputString('<div class="back-to-top"><a href="#top"><i class="fa fa-arrow-up"></i> back to top</a></div>');
             }
         } else {
+            if(strlen($this->logoUrl)>0){
+                $this->appendOutputString('<img src="'.$this->logoUrl.'" class="img-responsive img-center" />');
+            }
             $this->appendOutputString('<h1 class="election-title">'.$page_title.'</h1>');
             $this->appendOutputString("No election results found.","h3", "alert alert-warning");
         }
