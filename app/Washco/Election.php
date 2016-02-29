@@ -67,7 +67,6 @@ class Election {
                 $run_time = $exploded_report_time[1];
             }
 
-            $this->appendOutputString('<div class="container">');
             $this->appendOutputString('<div class="row">');
             $this->appendOutputString('<div class="col-md-3">');
             if(strlen($this->logoUrl)>0){
@@ -148,7 +147,6 @@ class Election {
 
         $this->appendOutputString('</div><!-- /.col -->');
         $this->appendOutputString('</div><!-- /.row -->');
-        $this->appendOutputString('</div><!-- /.container -->');
     }
 
     /**
