@@ -11,232 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://s3.amazonaws.com/washcomultimedia/web/css/custom.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-
-        <!-- Start custom css -->
-        <style>
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0; }
-
-html, body {
-  height: 100%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif; }
-
-body.fixed-navbar {
-  padding-top: 70px; }
-
-p, ul, ol {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  margin-bottom: 1em; }
-
-ol, ul {
-  margin-left: 18px; }
-
-h1, h2, h3, h4, h5 {
-  font-family: "Roboto Slab", Times, serif; }
-
-a {
-  color: #9c5221; }
-
-a:hover {
-  color: #9c5221; }
-
-a:visited {
-  color: #9c5221; }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* framework overrides */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.navbar-inverse {
-  background-color: #4e707e;
-  background-image: linear-gradient(#4e707e, #354b56);
-  border-color: #4e707e; }
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  color: white;
-  background-color: #354b56; }
-
-.navbar-inverse .navbar-nav > li > a {
-  color: #bebebe; }
-
-.navbar-brand {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #354b56; }
-
-.navbar-inverse .navbar-brand {
-  color: white; }
-
-.navbar-toggle {
-  border-radius: 0px; }
-
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0px; } }
-
-.page-header {
-  text-shadow: 1px 1px 1px #bebebe; }
-
-.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 0px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-
-.btn {
-  border-radius: 0px; }
-
-.container .jumbotron, .container-fluid .jumbotron {
-  border-radius: 0px; }
-
-.label {
-  border-radius: 0em; }
-
-.img-thumbnail {
-  border: 1px solid #bebebe;
-  border-radius: 0px; }
-
-.nav-pills > li > a {
-  border-radius: 0px; }
-
-.dropdown-menu {
-  border-radius: 0px; }
-
-.progress {
-  border-radius: 0px; }
-
-.list-group-item:first-child {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
-
-.list-unstyled {
-  margin-left: 0px; }
-
-.panel {
-  border-radius: 0px; }
-
-.panel-heading {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
-
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f1f0ed;
-  border: 1px solid #faf2f7;
-  border-radius: 0px; }
-
-.jumbotron {
-  color: inherit;
-  background-color: #f3f1ec; }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* custom */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.text-shadow-dark {
-  text-shadow: 1px 1px 1px black; }
-
-.main-copy {
-  margin-bottom: 10em; }
-
-img.img-center {
-  display: block;
-  margin: 0 auto; }
-
-.sidebar {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: #dbd6c7;
-  border: 1px solid #a39c86;
-  padding-bottom: 2em; }
-
-.sidebar li {
-  display: block; }
-
-.sidebar li > a {
-  padding: .25em .5em;
-  position: relative;
-  display: block; }
-
-.sidebar li > a:hover {
-  background-color: #aaa38f;
-  color: #693716;
-  text-decoration: none;
-  transition: background-color 0.5s ease; }
-
-.sidebar-heading {
-  padding: .8em .5em;
-  background-color: #a39c86;
-  margin-top: 0px;
-  text-transform: uppercase; }
-
-.footer {
-  border-top: 1px solid #354b56;
-  background-color: #4e707e;
-  background-image: linear-gradient(#354b56, #4e707e);
-  color: white;
-  padding-top: 2em;
-  padding-bottom: 4em; }
-
-.footer a {
-  color: white;
-  text-decoration: underline; }
-
-.copyright {
-  padding-top: 5em;
-  text-align: center;
-  font-weight: 100;
-  font-size: .9em;
-  color: #edcce2; }
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* application specific */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.election-summary {
-    min-height: 1em;
-    padding: 1em;
-    margin-bottom: 2em;
-    border: 1px solid #4e707e;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); }
-
-.election-summary p {
-    font-size: 1.2em;
-    line-height: 1.3em; }
-
-.contest {
-    border: 1px solid #4e707e;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); }
-
-.contest p {
-    padding: .3em;
-    margin: 0; }
-
-h5.contest-title {
-    margin: 0;
-    font-size: 1.4em;
-    background-color: #4e707e;
-    color: #fff;
-    text-shadow: none;
-    padding: .5em; }
-
-.back-to-top {
-    text-align: right;
-    margin-bottom: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em; }
-
-.page-header h1{
-    font-size: 30px;
-}
-        </style><!-- End custom css -->
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -246,8 +22,49 @@ h5.contest-title {
         <![endif]-->
     </head>
 
+    <!-- Start custom css -->
+    <style>
+        /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        /* application specific */
+        /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .election-summary {
+            min-height: 1em;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: 1px solid #4e707e;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); }
+
+        .election-summary p {
+            font-size: 1.2em;
+            line-height: 1.3em; }
+
+        .contest {
+            border: 1px solid #4e707e;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); }
+
+        .contest p {
+            padding: .3em;
+            margin: 0; }
+
+        h5.contest-title {
+            margin: 0;
+            font-size: 1.4em;
+            background-color: #4e707e;
+            color: #fff;
+            text-shadow: none;
+            padding: .5em; }
+
+        .back-to-top {
+            text-align: right;
+            margin-bottom: 1em;
+            padding-top: .5em;
+            padding-bottom: .5em; }
+    </style>
+    <!-- End custom css -->
 <body class="fixed-navbar">
-    <!-- end head partial -->
+<!-- end head partial -->
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
