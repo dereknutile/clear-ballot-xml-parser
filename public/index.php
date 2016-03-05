@@ -17,6 +17,12 @@
     $e->partialsDirectory = $partials_directory;
     $e->appTitle = $app_title;
     $e->logoUrl = $logo_url;
+    if(isset($next)){
+        $e->nextTime = $next;
+        echo ($next.' is set');
+    } else {
+        echo 'not set';
+    }
 
     /**
      * Build the html string
