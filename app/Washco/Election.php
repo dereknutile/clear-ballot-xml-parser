@@ -88,6 +88,10 @@ class Election {
             $this->appendOutputString('<div class="page-header">');
             $this->appendOutputString('<h1>'.$page_title.'</h1>');
             $this->appendOutputString('</div>');
+            $this->appendOutputString('<h2>Unofficial Results</h2>');
+            if($this->nextTime){
+                $this->appendOutputString('<p class="alert alert-warning">Next run time: '.$this->nextTime.'</p>');
+            }
             $this->appendOutputString('<a name="summary"></a>');
             $this->appendOutputString('<h3>Summary</h3>');
 
