@@ -19,9 +19,6 @@
     $e->logoUrl = $logo_url;
     if(isset($next)){
         $e->nextTime = $next;
-        echo ($next.' is set');
-    } else {
-        echo 'not set';
     }
 
     /**
