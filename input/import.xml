@@ -1,0 +1,2253 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Owner name="Clear Ballot XML Export" xmlversion="3.0-P">
+    <ReportTime>2016-02-02T10:11:05</ReportTime>
+    <GroupMap>
+        <Group groupType="PV" id="1" name="Provisional"></Group>
+        <Group groupType="ED" id="2" name="Election Day"></Group>
+        <Group groupType="AV" id="3" name="Absentee"></Group>
+        <Group groupType="OT" id="4" name="Other"></Group>
+        <Group groupType="EV" id="5" name="Early Voting"></Group>
+    </GroupMap>
+    <JurisdictionMap percentReported="100.0" reportingJurisdictions="1" totalJurisdictions="1">
+        <Jurisdiction precinctsReported="0" precinctsReportedPercentage="0.0" title="Washington County, OR" totalBallotsCast="100769" totalPrecincts="157" typeId="2">
+            <Precinct ballotsCast="699" counted="0" id="1" name="301">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="699" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="672" counted="0" id="2" name="302">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="672" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="306" counted="0" id="3" name="303">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="306" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="844" counted="0" id="4" name="304">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="844" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="242" counted="0" id="5" name="305">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="242" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="175" counted="0" id="6" name="306">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="175" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="586" counted="0" id="7" name="307">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="586" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="70" counted="0" id="8" name="308">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="70" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1073" counted="0" id="9" name="309">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1073" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="610" counted="0" id="10" name="310">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="610" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="219" counted="0" id="11" name="311">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="219" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="310" counted="0" id="12" name="312">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="310" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="4" counted="0" id="13" name="313">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="4" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="118" counted="0" id="14" name="314">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="118" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="439" counted="0" id="15" name="315">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="439" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="333" counted="0" id="16" name="316">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="333" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="364" counted="0" id="17" name="317">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="364" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="903" counted="0" id="18" name="318">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="903" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1736" counted="0" id="19" name="319">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1736" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="702" counted="0" id="20" name="320">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="702" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="76" counted="0" id="21" name="321">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="76" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="74" counted="0" id="22" name="322">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="74" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="169" counted="0" id="23" name="324">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="169" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="2" counted="0" id="24" name="325">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="2" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="694" counted="0" id="25" name="326">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="694" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1014" counted="0" id="26" name="327">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1014" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="782" counted="0" id="27" name="328">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="782" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="2394" counted="0" id="28" name="329">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="2394" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="471" counted="0" id="29" name="330">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="471" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="578" counted="0" id="30" name="331">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="578" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="0" counted="0" id="31" name="332">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="717" counted="0" id="32" name="333">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="717" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="62" counted="0" id="33" name="334">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="62" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1676" counted="0" id="34" name="335">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1676" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="953" counted="0" id="35" name="336">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="953" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1154" counted="0" id="36" name="337">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1154" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1252" counted="0" id="37" name="338">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1252" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="581" counted="0" id="38" name="339">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="581" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1093" counted="0" id="39" name="340">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1093" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="127" counted="0" id="40" name="341">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="127" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="28" counted="0" id="41" name="342">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="28" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1493" counted="0" id="42" name="343">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1493" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1318" counted="0" id="43" name="344">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1318" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="10" counted="0" id="44" name="345">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="10" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="122" counted="0" id="45" name="346">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="122" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="29" counted="0" id="46" name="347">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="29" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="9" counted="0" id="47" name="348">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="9" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="677" counted="0" id="48" name="349">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="677" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="981" counted="0" id="49" name="350">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="981" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="603" counted="0" id="50" name="351">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="603" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="180" counted="0" id="51" name="352">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="180" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="631" counted="0" id="52" name="353">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="631" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1460" counted="0" id="53" name="354">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1460" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="963" counted="0" id="54" name="355">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="963" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="509" counted="0" id="55" name="356">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="509" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="489" counted="0" id="56" name="357">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="489" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="676" counted="0" id="57" name="359">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="676" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="759" counted="0" id="58" name="360">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="759" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="358" counted="0" id="59" name="361">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="358" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1342" counted="0" id="60" name="362">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1342" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1209" counted="0" id="61" name="363">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1209" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1657" counted="0" id="62" name="364">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1657" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1232" counted="0" id="63" name="365">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1232" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="543" counted="0" id="64" name="366">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="543" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1266" counted="0" id="65" name="367">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1266" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1188" counted="0" id="66" name="368">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1188" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="614" counted="0" id="67" name="369">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="614" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="761" counted="0" id="68" name="370">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="761" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="839" counted="0" id="69" name="371">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="839" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="696" counted="0" id="70" name="372">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="696" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="127" counted="0" id="71" name="373">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="127" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="13" counted="0" id="72" name="374">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="13" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="92" counted="0" id="73" name="375">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="92" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="692" counted="0" id="74" name="376">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="692" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="959" counted="0" id="75" name="377">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="959" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="582" counted="0" id="76" name="378">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="582" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="765" counted="0" id="77" name="379">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="765" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="910" counted="0" id="78" name="380">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="910" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="481" counted="0" id="79" name="381">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="481" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="907" counted="0" id="80" name="382">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="907" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="434" counted="0" id="81" name="383">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="434" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="972" counted="0" id="82" name="384">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="972" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1171" counted="0" id="83" name="385">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1171" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1298" counted="0" id="84" name="386">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1298" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="254" counted="0" id="85" name="387">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="254" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="307" counted="0" id="86" name="388">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="307" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="709" counted="0" id="87" name="389">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="709" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1368" counted="0" id="88" name="390">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1368" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="65" counted="0" id="89" name="391">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="65" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="40" counted="0" id="90" name="392">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="40" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="264" counted="0" id="91" name="393">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="264" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="45" counted="0" id="92" name="394">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="45" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1253" counted="0" id="93" name="395">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1253" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="357" counted="0" id="94" name="396">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="357" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="858" counted="0" id="95" name="397">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="858" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="576" counted="0" id="96" name="398">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="576" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="779" counted="0" id="97" name="399">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="779" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1068" counted="0" id="98" name="400">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1068" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="723" counted="0" id="99" name="401">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="723" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="423" counted="0" id="100" name="402">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="423" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1709" counted="0" id="101" name="403">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1709" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1092" counted="0" id="102" name="404">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1092" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1918" counted="0" id="103" name="405">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1918" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1159" counted="0" id="104" name="406">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1159" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="736" counted="0" id="105" name="407">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="736" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="2152" counted="0" id="106" name="408">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="2152" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="934" counted="0" id="107" name="409">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="934" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="910" counted="0" id="108" name="410">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="910" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="612" counted="0" id="109" name="411">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="612" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="610" counted="0" id="110" name="412">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="610" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="279" counted="0" id="111" name="413">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="279" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="210" counted="0" id="112" name="414">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="210" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="295" counted="0" id="113" name="415">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="295" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="642" counted="0" id="114" name="416">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="642" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="407" counted="0" id="115" name="417">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="407" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="731" counted="0" id="116" name="418">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="731" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="954" counted="0" id="117" name="419">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="954" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1112" counted="0" id="118" name="420">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1112" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="89" counted="0" id="119" name="421">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="89" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="10" counted="0" id="120" name="422">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="10" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="864" counted="0" id="121" name="423">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="864" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="2075" counted="0" id="122" name="424">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="2075" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="364" counted="0" id="123" name="425">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="364" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="168" counted="0" id="124" name="426">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="168" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="10" counted="0" id="125" name="427">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="10" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="432" counted="0" id="126" name="428">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="432" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="756" counted="0" id="127" name="429">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="756" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="536" counted="0" id="128" name="430">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="536" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="528" counted="0" id="129" name="431">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="528" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="48" counted="0" id="130" name="432">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="48" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="714" counted="0" id="131" name="433">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="714" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1174" counted="0" id="132" name="434">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1174" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1935" counted="0" id="133" name="435">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1935" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="706" counted="0" id="134" name="436">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="706" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="27" counted="0" id="135" name="437">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="27" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="60" counted="0" id="136" name="438">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="60" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="72" counted="0" id="137" name="439">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="72" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="312" counted="0" id="138" name="440">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="312" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="22" counted="0" id="139" name="441">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="22" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="8" counted="0" id="140" name="443">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="8" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="415" counted="0" id="141" name="444">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="415" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1305" counted="0" id="142" name="446">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1305" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="857" counted="0" id="143" name="447">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="857" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="87" counted="0" id="144" name="448">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="87" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="32" counted="0" id="145" name="449">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="32" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="30" counted="0" id="146" name="450">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="30" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="0" counted="0" id="147" name="451">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="487" counted="0" id="148" name="452">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="487" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="285" counted="0" id="149" name="454">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="285" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="36" counted="0" id="150" name="455">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="36" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="5" counted="0" id="151" name="456">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="5" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="955" counted="0" id="152" name="457">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="955" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1143" counted="0" id="153" name="458">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1143" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="1003" counted="0" id="154" name="459">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="1003" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="480" counted="0" id="155" name="460">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="480" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="869" counted="0" id="156" name="461">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="869" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+            <Precinct ballotsCast="0" counted="0" id="157" name="999">
+                <PrecinctGroup ballotsCast="0" groupId="1"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="2"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="3"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="4"></PrecinctGroup>
+                <PrecinctGroup ballotsCast="0" groupId="5"></PrecinctGroup>
+            </Precinct>
+        </Jurisdiction>
+    </JurisdictionMap>
+    <PartyMap>
+        <Party abbrv="" id="99" name="None"></Party>
+    </PartyMap>
+    <Election absenteesCompleted="Y" earlyVotingCompleted="Y" electionName="Nov32015Special" electionTitle="Washington County, Oregon General Election Nov 3, 2015" groupReporting="1" precinctsCompleted="Y" precinctsReported="0" precinctsReportedPercentage="0.0" provisionalsCompleted="Y" resultsType="P" totalBallotsCast="100769" totalPrecincts="157">
+        <ContestList>
+            <Contest ballotsCast="100769" id="1" overVotes="24" pos="1.00" precinctsReported="0" title="34-235 Replacement Local Option Levy to Support ..." totalPrecincts="157" underVotes="409" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="100769" groupId="3" overVotes="24" totalVotes="100348" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="487" overVotes="0" refPrecinctId="148" totalVotes="485" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1318" overVotes="2" refPrecinctId="43" totalVotes="1314" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="44" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="122" overVotes="0" refPrecinctId="45" totalVotes="121" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="29" overVotes="0" refPrecinctId="46" totalVotes="28" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1093" overVotes="0" refPrecinctId="39" totalVotes="1089" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="127" overVotes="0" refPrecinctId="40" totalVotes="127" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="28" overVotes="0" refPrecinctId="41" totalVotes="28" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1493" overVotes="2" refPrecinctId="42" totalVotes="1485" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="9" overVotes="0" refPrecinctId="47" totalVotes="9" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="677" overVotes="2" refPrecinctId="48" totalVotes="676" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="934" overVotes="0" refPrecinctId="107" totalVotes="929" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2152" overVotes="0" refPrecinctId="106" totalVotes="2142" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="285" overVotes="0" refPrecinctId="149" totalVotes="284" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="157" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="36" overVotes="0" refPrecinctId="150" totalVotes="36" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="89" overVotes="0" refPrecinctId="119" totalVotes="89" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="5" overVotes="0" refPrecinctId="151" totalVotes="5" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1112" overVotes="0" refPrecinctId="118" totalVotes="1109" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="955" overVotes="0" refPrecinctId="152" totalVotes="948" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="864" overVotes="0" refPrecinctId="121" totalVotes="859" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="120" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="364" overVotes="0" refPrecinctId="123" totalVotes="363" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2075" overVotes="0" refPrecinctId="122" totalVotes="2046" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="765" overVotes="0" refPrecinctId="77" totalVotes="765" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="582" overVotes="0" refPrecinctId="76" totalVotes="579" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="642" overVotes="0" refPrecinctId="114" totalVotes="638" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="407" overVotes="0" refPrecinctId="115" totalVotes="404" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="910" overVotes="0" refPrecinctId="108" totalVotes="907" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="612" overVotes="2" refPrecinctId="109" totalVotes="607" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="610" overVotes="0" refPrecinctId="110" totalVotes="608" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="279" overVotes="0" refPrecinctId="111" totalVotes="279" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="839" overVotes="0" refPrecinctId="69" totalVotes="836" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="761" overVotes="0" refPrecinctId="68" totalVotes="757" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="127" overVotes="0" refPrecinctId="71" totalVotes="126" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="696" overVotes="0" refPrecinctId="70" totalVotes="694" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="92" overVotes="0" refPrecinctId="73" totalVotes="92" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="13" overVotes="0" refPrecinctId="72" totalVotes="13" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="959" overVotes="0" refPrecinctId="75" totalVotes="956" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="692" overVotes="0" refPrecinctId="74" totalVotes="689" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1736" overVotes="0" refPrecinctId="19" totalVotes="1729" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="903" overVotes="0" refPrecinctId="18" totalVotes="902" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="4" overVotes="0" refPrecinctId="13" totalVotes="4" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="310" overVotes="0" refPrecinctId="12" totalVotes="309" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="219" overVotes="0" refPrecinctId="11" totalVotes="215" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="610" overVotes="0" refPrecinctId="10" totalVotes="607" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="364" overVotes="0" refPrecinctId="17" totalVotes="363" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="333" overVotes="0" refPrecinctId="16" totalVotes="333" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="439" overVotes="0" refPrecinctId="15" totalVotes="435" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="118" overVotes="0" refPrecinctId="14" totalVotes="118" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="264" overVotes="0" refPrecinctId="91" totalVotes="263" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="40" overVotes="0" refPrecinctId="90" totalVotes="40" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="65" overVotes="0" refPrecinctId="89" totalVotes="65" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1368" overVotes="2" refPrecinctId="88" totalVotes="1361" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="858" overVotes="0" refPrecinctId="95" totalVotes="857" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="357" overVotes="0" refPrecinctId="94" totalVotes="357" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1253" overVotes="0" refPrecinctId="93" totalVotes="1250" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="45" overVotes="0" refPrecinctId="92" totalVotes="44" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="779" overVotes="0" refPrecinctId="97" totalVotes="777" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="576" overVotes="0" refPrecinctId="96" totalVotes="575" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="210" overVotes="0" refPrecinctId="112" totalVotes="210" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="295" overVotes="0" refPrecinctId="113" totalVotes="295" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="756" overVotes="0" refPrecinctId="127" totalVotes="756" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="432" overVotes="0" refPrecinctId="126" totalVotes="432" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="857" overVotes="0" refPrecinctId="143" totalVotes="850" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1188" overVotes="0" refPrecinctId="66" totalVotes="1186" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="614" overVotes="0" refPrecinctId="67" totalVotes="612" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="543" overVotes="0" refPrecinctId="64" totalVotes="537" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1266" overVotes="0" refPrecinctId="65" totalVotes="1264" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1657" overVotes="0" refPrecinctId="62" totalVotes="1654" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1232" overVotes="0" refPrecinctId="63" totalVotes="1230" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1342" overVotes="0" refPrecinctId="60" totalVotes="1341" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1209" overVotes="0" refPrecinctId="61" totalVotes="1205" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="759" overVotes="0" refPrecinctId="58" totalVotes="757" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="358" overVotes="0" refPrecinctId="59" totalVotes="358" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="70" overVotes="0" refPrecinctId="8" totalVotes="70" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1073" overVotes="2" refPrecinctId="9" totalVotes="1071" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="32" overVotes="0" refPrecinctId="145" totalVotes="32" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="312" overVotes="0" refPrecinctId="138" totalVotes="312" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="8" overVotes="0" refPrecinctId="140" totalVotes="8" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="699" overVotes="0" refPrecinctId="1" totalVotes="699" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="672" overVotes="0" refPrecinctId="2" totalVotes="672" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="306" overVotes="0" refPrecinctId="3" totalVotes="304" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="844" overVotes="0" refPrecinctId="4" totalVotes="843" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="242" overVotes="0" refPrecinctId="5" totalVotes="240" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="175" overVotes="0" refPrecinctId="6" totalVotes="175" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="586" overVotes="0" refPrecinctId="7" totalVotes="585" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="910" overVotes="0" refPrecinctId="78" totalVotes="906" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="481" overVotes="0" refPrecinctId="79" totalVotes="479" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="907" overVotes="0" refPrecinctId="80" totalVotes="903" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="434" overVotes="0" refPrecinctId="81" totalVotes="431" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="972" overVotes="2" refPrecinctId="82" totalVotes="968" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1171" overVotes="0" refPrecinctId="83" totalVotes="1167" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1298" overVotes="0" refPrecinctId="84" totalVotes="1296" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="254" overVotes="0" refPrecinctId="85" totalVotes="252" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="307" overVotes="2" refPrecinctId="86" totalVotes="299" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="709" overVotes="0" refPrecinctId="87" totalVotes="708" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="415" overVotes="0" refPrecinctId="141" totalVotes="414" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="731" overVotes="0" refPrecinctId="116" totalVotes="730" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="954" overVotes="4" refPrecinctId="117" totalVotes="942" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="60" overVotes="0" refPrecinctId="136" totalVotes="60" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="72" overVotes="0" refPrecinctId="137" totalVotes="71" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="706" overVotes="0" refPrecinctId="134" totalVotes="702" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="27" overVotes="0" refPrecinctId="135" totalVotes="27" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1174" overVotes="0" refPrecinctId="132" totalVotes="1169" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1935" overVotes="0" refPrecinctId="133" totalVotes="1918" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="48" overVotes="0" refPrecinctId="130" totalVotes="47" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="714" overVotes="0" refPrecinctId="131" totalVotes="714" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="536" overVotes="0" refPrecinctId="128" totalVotes="535" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="528" overVotes="0" refPrecinctId="129" totalVotes="525" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1143" overVotes="0" refPrecinctId="153" totalVotes="1141" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1003" overVotes="0" refPrecinctId="154" totalVotes="999" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="581" overVotes="0" refPrecinctId="38" totalVotes="574" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1252" overVotes="0" refPrecinctId="37" totalVotes="1247" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1676" overVotes="0" refPrecinctId="34" totalVotes="1674" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="62" overVotes="0" refPrecinctId="33" totalVotes="62" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1154" overVotes="0" refPrecinctId="36" totalVotes="1147" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="953" overVotes="0" refPrecinctId="35" totalVotes="952" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="578" overVotes="0" refPrecinctId="30" totalVotes="577" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="471" overVotes="0" refPrecinctId="29" totalVotes="469" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="717" overVotes="0" refPrecinctId="32" totalVotes="711" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="31" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="736" overVotes="0" refPrecinctId="105" totalVotes="734" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1159" overVotes="0" refPrecinctId="104" totalVotes="1151" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1918" overVotes="0" refPrecinctId="103" totalVotes="1903" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1092" overVotes="0" refPrecinctId="102" totalVotes="1084" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1709" overVotes="0" refPrecinctId="101" totalVotes="1695" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="423" overVotes="0" refPrecinctId="100" totalVotes="422" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="723" overVotes="0" refPrecinctId="99" totalVotes="721" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1068" overVotes="0" refPrecinctId="98" totalVotes="1061" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="869" overVotes="0" refPrecinctId="156" totalVotes="869" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="480" overVotes="0" refPrecinctId="155" totalVotes="479" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1305" overVotes="0" refPrecinctId="142" totalVotes="1302" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="125" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="168" overVotes="0" refPrecinctId="124" totalVotes="168" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="87" overVotes="0" refPrecinctId="144" totalVotes="87" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="22" overVotes="0" refPrecinctId="139" totalVotes="22" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="74" overVotes="0" refPrecinctId="22" totalVotes="72" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="702" overVotes="0" refPrecinctId="20" totalVotes="702" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="76" overVotes="0" refPrecinctId="21" totalVotes="75" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="694" overVotes="0" refPrecinctId="25" totalVotes="688" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1014" overVotes="0" refPrecinctId="26" totalVotes="1012" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="169" overVotes="0" refPrecinctId="23" totalVotes="169" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2" overVotes="0" refPrecinctId="24" totalVotes="2" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="782" overVotes="0" refPrecinctId="27" totalVotes="780" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2394" overVotes="0" refPrecinctId="28" totalVotes="2384" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="30" overVotes="0" refPrecinctId="146" totalVotes="30" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="147" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="489" overVotes="0" refPrecinctId="56" totalVotes="488" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="509" overVotes="0" refPrecinctId="55" totalVotes="507" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="963" overVotes="0" refPrecinctId="54" totalVotes="957" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1460" overVotes="0" refPrecinctId="53" totalVotes="1453" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="631" overVotes="0" refPrecinctId="52" totalVotes="630" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="180" overVotes="0" refPrecinctId="51" totalVotes="178" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="603" overVotes="4" refPrecinctId="50" totalVotes="601" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="981" overVotes="0" refPrecinctId="49" totalVotes="977" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="676" overVotes="0" refPrecinctId="57" totalVotes="675" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="1" name="Yes" partyId="99" pos="1" votes="64126">
+                    <CandidateGroup ballotsCast="100769" groupId="3" overVotes="12" totalVotes="64126" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="137">45</Votes>
+                    <Votes groupId="3" refPrecinctId="136">25</Votes>
+                    <Votes groupId="3" refPrecinctId="135">21</Votes>
+                    <Votes groupId="3" refPrecinctId="134">409</Votes>
+                    <Votes groupId="3" refPrecinctId="133">1156</Votes>
+                    <Votes groupId="3" refPrecinctId="132">727</Votes>
+                    <Votes groupId="3" refPrecinctId="131">451</Votes>
+                    <Votes groupId="3" refPrecinctId="130">31</Votes>
+                    <Votes groupId="3" refPrecinctId="129">311</Votes>
+                    <Votes groupId="3" refPrecinctId="128">291</Votes>
+                    <Votes groupId="3" refPrecinctId="33">36</Votes>
+                    <Votes groupId="3" refPrecinctId="34">1041</Votes>
+                    <Votes groupId="3" refPrecinctId="35">558</Votes>
+                    <Votes groupId="3" refPrecinctId="36">670</Votes>
+                    <Votes groupId="3" refPrecinctId="29">273</Votes>
+                    <Votes groupId="3" refPrecinctId="30">393</Votes>
+                    <Votes groupId="3" refPrecinctId="31">0</Votes>
+                    <Votes groupId="3" refPrecinctId="32">531</Votes>
+                    <Votes groupId="3" refPrecinctId="37">686</Votes>
+                    <Votes groupId="3" refPrecinctId="38">378</Votes>
+                    <Votes groupId="3" refPrecinctId="144">63</Votes>
+                    <Votes groupId="3" refPrecinctId="145">22</Votes>
+                    <Votes groupId="3" refPrecinctId="140">5</Votes>
+                    <Votes groupId="3" refPrecinctId="138">189</Votes>
+                    <Votes groupId="3" refPrecinctId="139">14</Votes>
+                    <Votes groupId="3" refPrecinctId="142">844</Votes>
+                    <Votes groupId="3" refPrecinctId="143">575</Votes>
+                    <Votes groupId="3" refPrecinctId="141">268</Votes>
+                    <Votes groupId="3" refPrecinctId="22">34</Votes>
+                    <Votes groupId="3" refPrecinctId="21">40</Votes>
+                    <Votes groupId="3" refPrecinctId="20">437</Votes>
+                    <Votes groupId="3" refPrecinctId="26">607</Votes>
+                    <Votes groupId="3" refPrecinctId="25">366</Votes>
+                    <Votes groupId="3" refPrecinctId="24">2</Votes>
+                    <Votes groupId="3" refPrecinctId="23">103</Votes>
+                    <Votes groupId="3" refPrecinctId="28">1607</Votes>
+                    <Votes groupId="3" refPrecinctId="27">441</Votes>
+                    <Votes groupId="3" refPrecinctId="154">618</Votes>
+                    <Votes groupId="3" refPrecinctId="153">671</Votes>
+                    <Votes groupId="3" refPrecinctId="147">0</Votes>
+                    <Votes groupId="3" refPrecinctId="146">17</Votes>
+                    <Votes groupId="3" refPrecinctId="148">326</Votes>
+                    <Votes groupId="3" refPrecinctId="150">18</Votes>
+                    <Votes groupId="3" refPrecinctId="149">165</Votes>
+                    <Votes groupId="3" refPrecinctId="152">545</Votes>
+                    <Votes groupId="3" refPrecinctId="151">0</Votes>
+                    <Votes groupId="3" refPrecinctId="157">0</Votes>
+                    <Votes groupId="3" refPrecinctId="55">312</Votes>
+                    <Votes groupId="3" refPrecinctId="56">302</Votes>
+                    <Votes groupId="3" refPrecinctId="53">902</Votes>
+                    <Votes groupId="3" refPrecinctId="54">608</Votes>
+                    <Votes groupId="3" refPrecinctId="51">149</Votes>
+                    <Votes groupId="3" refPrecinctId="52">447</Votes>
+                    <Votes groupId="3" refPrecinctId="49">686</Votes>
+                    <Votes groupId="3" refPrecinctId="50">354</Votes>
+                    <Votes groupId="3" refPrecinctId="57">430</Votes>
+                    <Votes groupId="3" refPrecinctId="44">8</Votes>
+                    <Votes groupId="3" refPrecinctId="43">867</Votes>
+                    <Votes groupId="3" refPrecinctId="46">20</Votes>
+                    <Votes groupId="3" refPrecinctId="45">55</Votes>
+                    <Votes groupId="3" refPrecinctId="40">64</Votes>
+                    <Votes groupId="3" refPrecinctId="39">655</Votes>
+                    <Votes groupId="3" refPrecinctId="42">918</Votes>
+                    <Votes groupId="3" refPrecinctId="41">12</Votes>
+                    <Votes groupId="3" refPrecinctId="48">429</Votes>
+                    <Votes groupId="3" refPrecinctId="47">6</Votes>
+                    <Votes groupId="3" refPrecinctId="68">483</Votes>
+                    <Votes groupId="3" refPrecinctId="69">615</Votes>
+                    <Votes groupId="3" refPrecinctId="70">507</Votes>
+                    <Votes groupId="3" refPrecinctId="71">78</Votes>
+                    <Votes groupId="3" refPrecinctId="72">7</Votes>
+                    <Votes groupId="3" refPrecinctId="73">68</Votes>
+                    <Votes groupId="3" refPrecinctId="74">446</Votes>
+                    <Votes groupId="3" refPrecinctId="75">654</Votes>
+                    <Votes groupId="3" refPrecinctId="76">406</Votes>
+                    <Votes groupId="3" refPrecinctId="77">484</Votes>
+                    <Votes groupId="3" refPrecinctId="156">535</Votes>
+                    <Votes groupId="3" refPrecinctId="104">768</Votes>
+                    <Votes groupId="3" refPrecinctId="105">512</Votes>
+                    <Votes groupId="3" refPrecinctId="102">658</Votes>
+                    <Votes groupId="3" refPrecinctId="103">1259</Votes>
+                    <Votes groupId="3" refPrecinctId="100">266</Votes>
+                    <Votes groupId="3" refPrecinctId="101">960</Votes>
+                    <Votes groupId="3" refPrecinctId="98">692</Votes>
+                    <Votes groupId="3" refPrecinctId="99">524</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1342</Votes>
+                    <Votes groupId="3" refPrecinctId="107">552</Votes>
+                    <Votes groupId="3" refPrecinctId="67">419</Votes>
+                    <Votes groupId="3" refPrecinctId="66">794</Votes>
+                    <Votes groupId="3" refPrecinctId="65">846</Votes>
+                    <Votes groupId="3" refPrecinctId="64">405</Votes>
+                    <Votes groupId="3" refPrecinctId="63">873</Votes>
+                    <Votes groupId="3" refPrecinctId="62">1068</Votes>
+                    <Votes groupId="3" refPrecinctId="61">912</Votes>
+                    <Votes groupId="3" refPrecinctId="60">986</Votes>
+                    <Votes groupId="3" refPrecinctId="59">276</Votes>
+                    <Votes groupId="3" refPrecinctId="58">495</Votes>
+                    <Votes groupId="3" refPrecinctId="113">200</Votes>
+                    <Votes groupId="3" refPrecinctId="112">121</Votes>
+                    <Votes groupId="3" refPrecinctId="115">284</Votes>
+                    <Votes groupId="3" refPrecinctId="114">407</Votes>
+                    <Votes groupId="3" refPrecinctId="109">384</Votes>
+                    <Votes groupId="3" refPrecinctId="108">556</Votes>
+                    <Votes groupId="3" refPrecinctId="111">187</Votes>
+                    <Votes groupId="3" refPrecinctId="110">364</Votes>
+                    <Votes groupId="3" refPrecinctId="117">607</Votes>
+                    <Votes groupId="3" refPrecinctId="116">429</Votes>
+                    <Votes groupId="3" refPrecinctId="90">25</Votes>
+                    <Votes groupId="3" refPrecinctId="91">200</Votes>
+                    <Votes groupId="3" refPrecinctId="88">826</Votes>
+                    <Votes groupId="3" refPrecinctId="89">48</Votes>
+                    <Votes groupId="3" refPrecinctId="94">261</Votes>
+                    <Votes groupId="3" refPrecinctId="95">519</Votes>
+                    <Votes groupId="3" refPrecinctId="92">35</Votes>
+                    <Votes groupId="3" refPrecinctId="93">714</Votes>
+                    <Votes groupId="3" refPrecinctId="96">290</Votes>
+                    <Votes groupId="3" refPrecinctId="97">516</Votes>
+                    <Votes groupId="3" refPrecinctId="18">540</Votes>
+                    <Votes groupId="3" refPrecinctId="19">1155</Votes>
+                    <Votes groupId="3" refPrecinctId="12">190</Votes>
+                    <Votes groupId="3" refPrecinctId="13">2</Votes>
+                    <Votes groupId="3" refPrecinctId="10">332</Votes>
+                    <Votes groupId="3" refPrecinctId="11">131</Votes>
+                    <Votes groupId="3" refPrecinctId="16">174</Votes>
+                    <Votes groupId="3" refPrecinctId="17">185</Votes>
+                    <Votes groupId="3" refPrecinctId="14">55</Votes>
+                    <Votes groupId="3" refPrecinctId="15">259</Votes>
+                    <Votes groupId="3" refPrecinctId="118">731</Votes>
+                    <Votes groupId="3" refPrecinctId="119">52</Votes>
+                    <Votes groupId="3" refPrecinctId="120">4</Votes>
+                    <Votes groupId="3" refPrecinctId="121">628</Votes>
+                    <Votes groupId="3" refPrecinctId="122">1226</Votes>
+                    <Votes groupId="3" refPrecinctId="123">177</Votes>
+                    <Votes groupId="3" refPrecinctId="124">103</Votes>
+                    <Votes groupId="3" refPrecinctId="125">5</Votes>
+                    <Votes groupId="3" refPrecinctId="126">286</Votes>
+                    <Votes groupId="3" refPrecinctId="127">442</Votes>
+                    <Votes groupId="3" refPrecinctId="79">322</Votes>
+                    <Votes groupId="3" refPrecinctId="78">549</Votes>
+                    <Votes groupId="3" refPrecinctId="81">308</Votes>
+                    <Votes groupId="3" refPrecinctId="80">600</Votes>
+                    <Votes groupId="3" refPrecinctId="83">838</Votes>
+                    <Votes groupId="3" refPrecinctId="82">683</Votes>
+                    <Votes groupId="3" refPrecinctId="85">171</Votes>
+                    <Votes groupId="3" refPrecinctId="84">997</Votes>
+                    <Votes groupId="3" refPrecinctId="87">382</Votes>
+                    <Votes groupId="3" refPrecinctId="86">188</Votes>
+                    <Votes groupId="3" refPrecinctId="9">721</Votes>
+                    <Votes groupId="3" refPrecinctId="8">42</Votes>
+                    <Votes groupId="3" refPrecinctId="155">368</Votes>
+                    <Votes groupId="3" refPrecinctId="1">404</Votes>
+                    <Votes groupId="3" refPrecinctId="3">169</Votes>
+                    <Votes groupId="3" refPrecinctId="2">433</Votes>
+                    <Votes groupId="3" refPrecinctId="5">146</Votes>
+                    <Votes groupId="3" refPrecinctId="4">550</Votes>
+                    <Votes groupId="3" refPrecinctId="7">356</Votes>
+                    <Votes groupId="3" refPrecinctId="6">125</Votes>
+                </Candidate>
+                <Candidate id="2" name="No" partyId="99" pos="2" votes="36222">
+                    <CandidateGroup ballotsCast="100769" groupId="3" overVotes="12" totalVotes="36222" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="137">26</Votes>
+                    <Votes groupId="3" refPrecinctId="136">35</Votes>
+                    <Votes groupId="3" refPrecinctId="135">6</Votes>
+                    <Votes groupId="3" refPrecinctId="134">293</Votes>
+                    <Votes groupId="3" refPrecinctId="133">762</Votes>
+                    <Votes groupId="3" refPrecinctId="132">442</Votes>
+                    <Votes groupId="3" refPrecinctId="131">263</Votes>
+                    <Votes groupId="3" refPrecinctId="130">16</Votes>
+                    <Votes groupId="3" refPrecinctId="129">214</Votes>
+                    <Votes groupId="3" refPrecinctId="128">244</Votes>
+                    <Votes groupId="3" refPrecinctId="33">26</Votes>
+                    <Votes groupId="3" refPrecinctId="34">633</Votes>
+                    <Votes groupId="3" refPrecinctId="35">394</Votes>
+                    <Votes groupId="3" refPrecinctId="36">477</Votes>
+                    <Votes groupId="3" refPrecinctId="29">196</Votes>
+                    <Votes groupId="3" refPrecinctId="30">184</Votes>
+                    <Votes groupId="3" refPrecinctId="31">0</Votes>
+                    <Votes groupId="3" refPrecinctId="32">180</Votes>
+                    <Votes groupId="3" refPrecinctId="37">561</Votes>
+                    <Votes groupId="3" refPrecinctId="38">196</Votes>
+                    <Votes groupId="3" refPrecinctId="144">24</Votes>
+                    <Votes groupId="3" refPrecinctId="145">10</Votes>
+                    <Votes groupId="3" refPrecinctId="140">3</Votes>
+                    <Votes groupId="3" refPrecinctId="138">123</Votes>
+                    <Votes groupId="3" refPrecinctId="139">8</Votes>
+                    <Votes groupId="3" refPrecinctId="142">458</Votes>
+                    <Votes groupId="3" refPrecinctId="143">275</Votes>
+                    <Votes groupId="3" refPrecinctId="141">146</Votes>
+                    <Votes groupId="3" refPrecinctId="22">38</Votes>
+                    <Votes groupId="3" refPrecinctId="21">35</Votes>
+                    <Votes groupId="3" refPrecinctId="20">265</Votes>
+                    <Votes groupId="3" refPrecinctId="26">405</Votes>
+                    <Votes groupId="3" refPrecinctId="25">322</Votes>
+                    <Votes groupId="3" refPrecinctId="24">0</Votes>
+                    <Votes groupId="3" refPrecinctId="23">66</Votes>
+                    <Votes groupId="3" refPrecinctId="28">777</Votes>
+                    <Votes groupId="3" refPrecinctId="27">339</Votes>
+                    <Votes groupId="3" refPrecinctId="154">381</Votes>
+                    <Votes groupId="3" refPrecinctId="153">470</Votes>
+                    <Votes groupId="3" refPrecinctId="147">0</Votes>
+                    <Votes groupId="3" refPrecinctId="146">13</Votes>
+                    <Votes groupId="3" refPrecinctId="148">159</Votes>
+                    <Votes groupId="3" refPrecinctId="150">18</Votes>
+                    <Votes groupId="3" refPrecinctId="149">119</Votes>
+                    <Votes groupId="3" refPrecinctId="152">403</Votes>
+                    <Votes groupId="3" refPrecinctId="151">5</Votes>
+                    <Votes groupId="3" refPrecinctId="157">0</Votes>
+                    <Votes groupId="3" refPrecinctId="55">195</Votes>
+                    <Votes groupId="3" refPrecinctId="56">186</Votes>
+                    <Votes groupId="3" refPrecinctId="53">551</Votes>
+                    <Votes groupId="3" refPrecinctId="54">349</Votes>
+                    <Votes groupId="3" refPrecinctId="51">29</Votes>
+                    <Votes groupId="3" refPrecinctId="52">183</Votes>
+                    <Votes groupId="3" refPrecinctId="49">291</Votes>
+                    <Votes groupId="3" refPrecinctId="50">247</Votes>
+                    <Votes groupId="3" refPrecinctId="57">245</Votes>
+                    <Votes groupId="3" refPrecinctId="44">2</Votes>
+                    <Votes groupId="3" refPrecinctId="43">447</Votes>
+                    <Votes groupId="3" refPrecinctId="46">8</Votes>
+                    <Votes groupId="3" refPrecinctId="45">66</Votes>
+                    <Votes groupId="3" refPrecinctId="40">63</Votes>
+                    <Votes groupId="3" refPrecinctId="39">434</Votes>
+                    <Votes groupId="3" refPrecinctId="42">567</Votes>
+                    <Votes groupId="3" refPrecinctId="41">16</Votes>
+                    <Votes groupId="3" refPrecinctId="48">247</Votes>
+                    <Votes groupId="3" refPrecinctId="47">3</Votes>
+                    <Votes groupId="3" refPrecinctId="68">274</Votes>
+                    <Votes groupId="3" refPrecinctId="69">221</Votes>
+                    <Votes groupId="3" refPrecinctId="70">187</Votes>
+                    <Votes groupId="3" refPrecinctId="71">48</Votes>
+                    <Votes groupId="3" refPrecinctId="72">6</Votes>
+                    <Votes groupId="3" refPrecinctId="73">24</Votes>
+                    <Votes groupId="3" refPrecinctId="74">243</Votes>
+                    <Votes groupId="3" refPrecinctId="75">302</Votes>
+                    <Votes groupId="3" refPrecinctId="76">173</Votes>
+                    <Votes groupId="3" refPrecinctId="77">281</Votes>
+                    <Votes groupId="3" refPrecinctId="156">334</Votes>
+                    <Votes groupId="3" refPrecinctId="104">383</Votes>
+                    <Votes groupId="3" refPrecinctId="105">222</Votes>
+                    <Votes groupId="3" refPrecinctId="102">426</Votes>
+                    <Votes groupId="3" refPrecinctId="103">644</Votes>
+                    <Votes groupId="3" refPrecinctId="100">156</Votes>
+                    <Votes groupId="3" refPrecinctId="101">735</Votes>
+                    <Votes groupId="3" refPrecinctId="98">369</Votes>
+                    <Votes groupId="3" refPrecinctId="99">197</Votes>
+                    <Votes groupId="3" refPrecinctId="106">800</Votes>
+                    <Votes groupId="3" refPrecinctId="107">377</Votes>
+                    <Votes groupId="3" refPrecinctId="67">193</Votes>
+                    <Votes groupId="3" refPrecinctId="66">392</Votes>
+                    <Votes groupId="3" refPrecinctId="65">418</Votes>
+                    <Votes groupId="3" refPrecinctId="64">132</Votes>
+                    <Votes groupId="3" refPrecinctId="63">357</Votes>
+                    <Votes groupId="3" refPrecinctId="62">586</Votes>
+                    <Votes groupId="3" refPrecinctId="61">293</Votes>
+                    <Votes groupId="3" refPrecinctId="60">355</Votes>
+                    <Votes groupId="3" refPrecinctId="59">82</Votes>
+                    <Votes groupId="3" refPrecinctId="58">262</Votes>
+                    <Votes groupId="3" refPrecinctId="113">95</Votes>
+                    <Votes groupId="3" refPrecinctId="112">89</Votes>
+                    <Votes groupId="3" refPrecinctId="115">120</Votes>
+                    <Votes groupId="3" refPrecinctId="114">231</Votes>
+                    <Votes groupId="3" refPrecinctId="109">223</Votes>
+                    <Votes groupId="3" refPrecinctId="108">351</Votes>
+                    <Votes groupId="3" refPrecinctId="111">92</Votes>
+                    <Votes groupId="3" refPrecinctId="110">244</Votes>
+                    <Votes groupId="3" refPrecinctId="117">335</Votes>
+                    <Votes groupId="3" refPrecinctId="116">301</Votes>
+                    <Votes groupId="3" refPrecinctId="90">15</Votes>
+                    <Votes groupId="3" refPrecinctId="91">63</Votes>
+                    <Votes groupId="3" refPrecinctId="88">535</Votes>
+                    <Votes groupId="3" refPrecinctId="89">17</Votes>
+                    <Votes groupId="3" refPrecinctId="94">96</Votes>
+                    <Votes groupId="3" refPrecinctId="95">338</Votes>
+                    <Votes groupId="3" refPrecinctId="92">9</Votes>
+                    <Votes groupId="3" refPrecinctId="93">536</Votes>
+                    <Votes groupId="3" refPrecinctId="96">285</Votes>
+                    <Votes groupId="3" refPrecinctId="97">261</Votes>
+                    <Votes groupId="3" refPrecinctId="18">362</Votes>
+                    <Votes groupId="3" refPrecinctId="19">574</Votes>
+                    <Votes groupId="3" refPrecinctId="12">119</Votes>
+                    <Votes groupId="3" refPrecinctId="13">2</Votes>
+                    <Votes groupId="3" refPrecinctId="10">275</Votes>
+                    <Votes groupId="3" refPrecinctId="11">84</Votes>
+                    <Votes groupId="3" refPrecinctId="16">159</Votes>
+                    <Votes groupId="3" refPrecinctId="17">178</Votes>
+                    <Votes groupId="3" refPrecinctId="14">63</Votes>
+                    <Votes groupId="3" refPrecinctId="15">176</Votes>
+                    <Votes groupId="3" refPrecinctId="118">378</Votes>
+                    <Votes groupId="3" refPrecinctId="119">37</Votes>
+                    <Votes groupId="3" refPrecinctId="120">6</Votes>
+                    <Votes groupId="3" refPrecinctId="121">231</Votes>
+                    <Votes groupId="3" refPrecinctId="122">820</Votes>
+                    <Votes groupId="3" refPrecinctId="123">186</Votes>
+                    <Votes groupId="3" refPrecinctId="124">65</Votes>
+                    <Votes groupId="3" refPrecinctId="125">5</Votes>
+                    <Votes groupId="3" refPrecinctId="126">146</Votes>
+                    <Votes groupId="3" refPrecinctId="127">314</Votes>
+                    <Votes groupId="3" refPrecinctId="79">157</Votes>
+                    <Votes groupId="3" refPrecinctId="78">357</Votes>
+                    <Votes groupId="3" refPrecinctId="81">123</Votes>
+                    <Votes groupId="3" refPrecinctId="80">303</Votes>
+                    <Votes groupId="3" refPrecinctId="83">329</Votes>
+                    <Votes groupId="3" refPrecinctId="82">285</Votes>
+                    <Votes groupId="3" refPrecinctId="85">81</Votes>
+                    <Votes groupId="3" refPrecinctId="84">299</Votes>
+                    <Votes groupId="3" refPrecinctId="87">326</Votes>
+                    <Votes groupId="3" refPrecinctId="86">111</Votes>
+                    <Votes groupId="3" refPrecinctId="9">350</Votes>
+                    <Votes groupId="3" refPrecinctId="8">28</Votes>
+                    <Votes groupId="3" refPrecinctId="155">111</Votes>
+                    <Votes groupId="3" refPrecinctId="1">295</Votes>
+                    <Votes groupId="3" refPrecinctId="3">135</Votes>
+                    <Votes groupId="3" refPrecinctId="2">239</Votes>
+                    <Votes groupId="3" refPrecinctId="5">94</Votes>
+                    <Votes groupId="3" refPrecinctId="4">293</Votes>
+                    <Votes groupId="3" refPrecinctId="7">229</Votes>
+                    <Votes groupId="3" refPrecinctId="6">50</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="100769" id="2" overVotes="14" pos="2.00" precinctsReported="0" title="34-236 Renewal of Local Option Levy for Countywide Public ..." totalPrecincts="157" underVotes="519" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="100769" groupId="3" overVotes="14" totalVotes="100243" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="487" overVotes="0" refPrecinctId="148" totalVotes="485" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1318" overVotes="0" refPrecinctId="43" totalVotes="1315" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="44" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="122" overVotes="0" refPrecinctId="45" totalVotes="121" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="29" overVotes="0" refPrecinctId="46" totalVotes="29" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1093" overVotes="0" refPrecinctId="39" totalVotes="1086" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="127" overVotes="0" refPrecinctId="40" totalVotes="127" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="28" overVotes="0" refPrecinctId="41" totalVotes="28" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1493" overVotes="0" refPrecinctId="42" totalVotes="1489" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="9" overVotes="0" refPrecinctId="47" totalVotes="9" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="677" overVotes="0" refPrecinctId="48" totalVotes="676" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="934" overVotes="0" refPrecinctId="107" totalVotes="926" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2152" overVotes="0" refPrecinctId="106" totalVotes="2128" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="285" overVotes="0" refPrecinctId="149" totalVotes="282" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="157" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="36" overVotes="0" refPrecinctId="150" totalVotes="36" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="89" overVotes="0" refPrecinctId="119" totalVotes="89" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="5" overVotes="0" refPrecinctId="151" totalVotes="5" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1112" overVotes="0" refPrecinctId="118" totalVotes="1106" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="955" overVotes="0" refPrecinctId="152" totalVotes="947" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="864" overVotes="0" refPrecinctId="121" totalVotes="860" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="120" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="364" overVotes="0" refPrecinctId="123" totalVotes="364" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2075" overVotes="2" refPrecinctId="122" totalVotes="2033" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="765" overVotes="0" refPrecinctId="77" totalVotes="762" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="582" overVotes="0" refPrecinctId="76" totalVotes="578" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="642" overVotes="0" refPrecinctId="114" totalVotes="635" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="407" overVotes="0" refPrecinctId="115" totalVotes="405" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="910" overVotes="0" refPrecinctId="108" totalVotes="908" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="612" overVotes="0" refPrecinctId="109" totalVotes="607" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="610" overVotes="0" refPrecinctId="110" totalVotes="610" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="279" overVotes="0" refPrecinctId="111" totalVotes="278" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="839" overVotes="0" refPrecinctId="69" totalVotes="835" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="761" overVotes="0" refPrecinctId="68" totalVotes="759" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="127" overVotes="0" refPrecinctId="71" totalVotes="125" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="696" overVotes="0" refPrecinctId="70" totalVotes="691" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="92" overVotes="0" refPrecinctId="73" totalVotes="92" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="13" overVotes="0" refPrecinctId="72" totalVotes="13" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="959" overVotes="0" refPrecinctId="75" totalVotes="958" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="692" overVotes="0" refPrecinctId="74" totalVotes="691" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1736" overVotes="0" refPrecinctId="19" totalVotes="1730" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="903" overVotes="0" refPrecinctId="18" totalVotes="902" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="4" overVotes="0" refPrecinctId="13" totalVotes="4" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="310" overVotes="0" refPrecinctId="12" totalVotes="309" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="219" overVotes="0" refPrecinctId="11" totalVotes="219" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="610" overVotes="0" refPrecinctId="10" totalVotes="606" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="364" overVotes="0" refPrecinctId="17" totalVotes="363" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="333" overVotes="0" refPrecinctId="16" totalVotes="333" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="439" overVotes="0" refPrecinctId="15" totalVotes="435" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="118" overVotes="0" refPrecinctId="14" totalVotes="117" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="264" overVotes="0" refPrecinctId="91" totalVotes="262" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="40" overVotes="0" refPrecinctId="90" totalVotes="40" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="65" overVotes="0" refPrecinctId="89" totalVotes="65" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1368" overVotes="0" refPrecinctId="88" totalVotes="1364" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="858" overVotes="0" refPrecinctId="95" totalVotes="856" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="357" overVotes="0" refPrecinctId="94" totalVotes="357" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1253" overVotes="0" refPrecinctId="93" totalVotes="1252" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="45" overVotes="0" refPrecinctId="92" totalVotes="45" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="779" overVotes="0" refPrecinctId="97" totalVotes="777" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="576" overVotes="0" refPrecinctId="96" totalVotes="575" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="210" overVotes="0" refPrecinctId="112" totalVotes="210" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="295" overVotes="0" refPrecinctId="113" totalVotes="294" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="756" overVotes="2" refPrecinctId="127" totalVotes="751" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="432" overVotes="0" refPrecinctId="126" totalVotes="427" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="857" overVotes="0" refPrecinctId="143" totalVotes="850" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1188" overVotes="0" refPrecinctId="66" totalVotes="1186" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="614" overVotes="0" refPrecinctId="67" totalVotes="614" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="543" overVotes="0" refPrecinctId="64" totalVotes="541" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1266" overVotes="0" refPrecinctId="65" totalVotes="1261" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1657" overVotes="0" refPrecinctId="62" totalVotes="1648" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1232" overVotes="0" refPrecinctId="63" totalVotes="1227" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1342" overVotes="0" refPrecinctId="60" totalVotes="1337" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1209" overVotes="0" refPrecinctId="61" totalVotes="1198" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="759" overVotes="0" refPrecinctId="58" totalVotes="759" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="358" overVotes="0" refPrecinctId="59" totalVotes="358" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="70" overVotes="0" refPrecinctId="8" totalVotes="70" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1073" overVotes="2" refPrecinctId="9" totalVotes="1071" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="32" overVotes="0" refPrecinctId="145" totalVotes="31" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="312" overVotes="0" refPrecinctId="138" totalVotes="312" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="8" overVotes="0" refPrecinctId="140" totalVotes="8" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="699" overVotes="0" refPrecinctId="1" totalVotes="696" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="672" overVotes="0" refPrecinctId="2" totalVotes="670" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="306" overVotes="0" refPrecinctId="3" totalVotes="305" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="844" overVotes="0" refPrecinctId="4" totalVotes="842" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="242" overVotes="0" refPrecinctId="5" totalVotes="241" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="175" overVotes="0" refPrecinctId="6" totalVotes="175" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="586" overVotes="0" refPrecinctId="7" totalVotes="584" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="910" overVotes="0" refPrecinctId="78" totalVotes="909" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="481" overVotes="0" refPrecinctId="79" totalVotes="480" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="907" overVotes="0" refPrecinctId="80" totalVotes="903" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="434" overVotes="0" refPrecinctId="81" totalVotes="432" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="972" overVotes="0" refPrecinctId="82" totalVotes="969" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1171" overVotes="0" refPrecinctId="83" totalVotes="1167" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1298" overVotes="0" refPrecinctId="84" totalVotes="1291" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="254" overVotes="0" refPrecinctId="85" totalVotes="252" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="307" overVotes="2" refPrecinctId="86" totalVotes="303" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="709" overVotes="0" refPrecinctId="87" totalVotes="709" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="415" overVotes="0" refPrecinctId="141" totalVotes="414" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="731" overVotes="0" refPrecinctId="116" totalVotes="729" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="954" overVotes="0" refPrecinctId="117" totalVotes="944" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="60" overVotes="0" refPrecinctId="136" totalVotes="60" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="72" overVotes="0" refPrecinctId="137" totalVotes="71" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="706" overVotes="0" refPrecinctId="134" totalVotes="702" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="27" overVotes="0" refPrecinctId="135" totalVotes="27" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1174" overVotes="0" refPrecinctId="132" totalVotes="1169" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1935" overVotes="0" refPrecinctId="133" totalVotes="1913" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="48" overVotes="0" refPrecinctId="130" totalVotes="47" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="714" overVotes="0" refPrecinctId="131" totalVotes="712" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="536" overVotes="0" refPrecinctId="128" totalVotes="535" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="528" overVotes="0" refPrecinctId="129" totalVotes="527" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1143" overVotes="0" refPrecinctId="153" totalVotes="1139" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1003" overVotes="0" refPrecinctId="154" totalVotes="997" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="581" overVotes="0" refPrecinctId="38" totalVotes="576" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1252" overVotes="0" refPrecinctId="37" totalVotes="1248" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1676" overVotes="0" refPrecinctId="34" totalVotes="1671" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="62" overVotes="0" refPrecinctId="33" totalVotes="61" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1154" overVotes="0" refPrecinctId="36" totalVotes="1147" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="953" overVotes="0" refPrecinctId="35" totalVotes="953" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="578" overVotes="0" refPrecinctId="30" totalVotes="576" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="471" overVotes="0" refPrecinctId="29" totalVotes="468" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="717" overVotes="0" refPrecinctId="32" totalVotes="712" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="31" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="736" overVotes="0" refPrecinctId="105" totalVotes="735" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1159" overVotes="0" refPrecinctId="104" totalVotes="1148" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1918" overVotes="0" refPrecinctId="103" totalVotes="1893" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1092" overVotes="0" refPrecinctId="102" totalVotes="1074" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1709" overVotes="0" refPrecinctId="101" totalVotes="1684" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="423" overVotes="0" refPrecinctId="100" totalVotes="418" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="723" overVotes="0" refPrecinctId="99" totalVotes="719" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1068" overVotes="0" refPrecinctId="98" totalVotes="1054" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="869" overVotes="0" refPrecinctId="156" totalVotes="867" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="480" overVotes="0" refPrecinctId="155" totalVotes="478" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1305" overVotes="2" refPrecinctId="142" totalVotes="1302" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="125" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="168" overVotes="0" refPrecinctId="124" totalVotes="168" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="87" overVotes="0" refPrecinctId="144" totalVotes="86" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="22" overVotes="0" refPrecinctId="139" totalVotes="22" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="74" overVotes="0" refPrecinctId="22" totalVotes="74" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="702" overVotes="0" refPrecinctId="20" totalVotes="699" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="76" overVotes="0" refPrecinctId="21" totalVotes="76" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="694" overVotes="0" refPrecinctId="25" totalVotes="692" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1014" overVotes="0" refPrecinctId="26" totalVotes="1012" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="169" overVotes="0" refPrecinctId="23" totalVotes="168" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2" overVotes="0" refPrecinctId="24" totalVotes="2" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="782" overVotes="0" refPrecinctId="27" totalVotes="780" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2394" overVotes="0" refPrecinctId="28" totalVotes="2387" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="30" overVotes="0" refPrecinctId="146" totalVotes="30" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="0" overVotes="0" refPrecinctId="147" totalVotes="0" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="489" overVotes="0" refPrecinctId="56" totalVotes="488" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="509" overVotes="0" refPrecinctId="55" totalVotes="509" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="963" overVotes="0" refPrecinctId="54" totalVotes="956" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1460" overVotes="0" refPrecinctId="53" totalVotes="1456" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="631" overVotes="0" refPrecinctId="52" totalVotes="630" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="180" overVotes="0" refPrecinctId="51" totalVotes="177" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="603" overVotes="4" refPrecinctId="50" totalVotes="598" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="981" overVotes="0" refPrecinctId="49" totalVotes="977" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="676" overVotes="0" refPrecinctId="57" totalVotes="676" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="3" name="Yes" partyId="99" pos="3" votes="72846">
+                    <CandidateGroup ballotsCast="100769" groupId="3" overVotes="7" totalVotes="72846" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="137">41</Votes>
+                    <Votes groupId="3" refPrecinctId="136">32</Votes>
+                    <Votes groupId="3" refPrecinctId="135">21</Votes>
+                    <Votes groupId="3" refPrecinctId="134">506</Votes>
+                    <Votes groupId="3" refPrecinctId="133">1279</Votes>
+                    <Votes groupId="3" refPrecinctId="132">849</Votes>
+                    <Votes groupId="3" refPrecinctId="131">513</Votes>
+                    <Votes groupId="3" refPrecinctId="130">37</Votes>
+                    <Votes groupId="3" refPrecinctId="129">348</Votes>
+                    <Votes groupId="3" refPrecinctId="128">348</Votes>
+                    <Votes groupId="3" refPrecinctId="33">37</Votes>
+                    <Votes groupId="3" refPrecinctId="34">1250</Votes>
+                    <Votes groupId="3" refPrecinctId="35">656</Votes>
+                    <Votes groupId="3" refPrecinctId="36">783</Votes>
+                    <Votes groupId="3" refPrecinctId="29">298</Votes>
+                    <Votes groupId="3" refPrecinctId="30">423</Votes>
+                    <Votes groupId="3" refPrecinctId="31">0</Votes>
+                    <Votes groupId="3" refPrecinctId="32">578</Votes>
+                    <Votes groupId="3" refPrecinctId="37">827</Votes>
+                    <Votes groupId="3" refPrecinctId="38">432</Votes>
+                    <Votes groupId="3" refPrecinctId="144">68</Votes>
+                    <Votes groupId="3" refPrecinctId="145">23</Votes>
+                    <Votes groupId="3" refPrecinctId="140">6</Votes>
+                    <Votes groupId="3" refPrecinctId="138">210</Votes>
+                    <Votes groupId="3" refPrecinctId="139">16</Votes>
+                    <Votes groupId="3" refPrecinctId="142">916</Votes>
+                    <Votes groupId="3" refPrecinctId="143">659</Votes>
+                    <Votes groupId="3" refPrecinctId="141">314</Votes>
+                    <Votes groupId="3" refPrecinctId="22">43</Votes>
+                    <Votes groupId="3" refPrecinctId="21">45</Votes>
+                    <Votes groupId="3" refPrecinctId="20">503</Votes>
+                    <Votes groupId="3" refPrecinctId="26">711</Votes>
+                    <Votes groupId="3" refPrecinctId="25">452</Votes>
+                    <Votes groupId="3" refPrecinctId="24">2</Votes>
+                    <Votes groupId="3" refPrecinctId="23">114</Votes>
+                    <Votes groupId="3" refPrecinctId="28">1796</Votes>
+                    <Votes groupId="3" refPrecinctId="27">533</Votes>
+                    <Votes groupId="3" refPrecinctId="154">732</Votes>
+                    <Votes groupId="3" refPrecinctId="153">806</Votes>
+                    <Votes groupId="3" refPrecinctId="147">0</Votes>
+                    <Votes groupId="3" refPrecinctId="146">19</Votes>
+                    <Votes groupId="3" refPrecinctId="148">364</Votes>
+                    <Votes groupId="3" refPrecinctId="150">25</Votes>
+                    <Votes groupId="3" refPrecinctId="149">207</Votes>
+                    <Votes groupId="3" refPrecinctId="152">641</Votes>
+                    <Votes groupId="3" refPrecinctId="151">1</Votes>
+                    <Votes groupId="3" refPrecinctId="157">0</Votes>
+                    <Votes groupId="3" refPrecinctId="55">352</Votes>
+                    <Votes groupId="3" refPrecinctId="56">359</Votes>
+                    <Votes groupId="3" refPrecinctId="53">1026</Votes>
+                    <Votes groupId="3" refPrecinctId="54">681</Votes>
+                    <Votes groupId="3" refPrecinctId="51">151</Votes>
+                    <Votes groupId="3" refPrecinctId="52">494</Votes>
+                    <Votes groupId="3" refPrecinctId="49">732</Votes>
+                    <Votes groupId="3" refPrecinctId="50">397</Votes>
+                    <Votes groupId="3" refPrecinctId="57">475</Votes>
+                    <Votes groupId="3" refPrecinctId="44">8</Votes>
+                    <Votes groupId="3" refPrecinctId="43">999</Votes>
+                    <Votes groupId="3" refPrecinctId="46">25</Votes>
+                    <Votes groupId="3" refPrecinctId="45">83</Votes>
+                    <Votes groupId="3" refPrecinctId="40">93</Votes>
+                    <Votes groupId="3" refPrecinctId="39">805</Votes>
+                    <Votes groupId="3" refPrecinctId="42">1070</Votes>
+                    <Votes groupId="3" refPrecinctId="41">20</Votes>
+                    <Votes groupId="3" refPrecinctId="48">492</Votes>
+                    <Votes groupId="3" refPrecinctId="47">7</Votes>
+                    <Votes groupId="3" refPrecinctId="68">561</Votes>
+                    <Votes groupId="3" refPrecinctId="69">687</Votes>
+                    <Votes groupId="3" refPrecinctId="70">550</Votes>
+                    <Votes groupId="3" refPrecinctId="71">82</Votes>
+                    <Votes groupId="3" refPrecinctId="72">8</Votes>
+                    <Votes groupId="3" refPrecinctId="73">73</Votes>
+                    <Votes groupId="3" refPrecinctId="74">513</Votes>
+                    <Votes groupId="3" refPrecinctId="75">742</Votes>
+                    <Votes groupId="3" refPrecinctId="76">445</Votes>
+                    <Votes groupId="3" refPrecinctId="77">552</Votes>
+                    <Votes groupId="3" refPrecinctId="156">606</Votes>
+                    <Votes groupId="3" refPrecinctId="104">877</Votes>
+                    <Votes groupId="3" refPrecinctId="105">551</Votes>
+                    <Votes groupId="3" refPrecinctId="102">772</Votes>
+                    <Votes groupId="3" refPrecinctId="103">1420</Votes>
+                    <Votes groupId="3" refPrecinctId="100">305</Votes>
+                    <Votes groupId="3" refPrecinctId="101">1144</Votes>
+                    <Votes groupId="3" refPrecinctId="98">749</Votes>
+                    <Votes groupId="3" refPrecinctId="99">577</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1550</Votes>
+                    <Votes groupId="3" refPrecinctId="107">648</Votes>
+                    <Votes groupId="3" refPrecinctId="67">473</Votes>
+                    <Votes groupId="3" refPrecinctId="66">875</Votes>
+                    <Votes groupId="3" refPrecinctId="65">905</Votes>
+                    <Votes groupId="3" refPrecinctId="64">428</Votes>
+                    <Votes groupId="3" refPrecinctId="63">928</Votes>
+                    <Votes groupId="3" refPrecinctId="62">1168</Votes>
+                    <Votes groupId="3" refPrecinctId="61">956</Votes>
+                    <Votes groupId="3" refPrecinctId="60">1071</Votes>
+                    <Votes groupId="3" refPrecinctId="59">291</Votes>
+                    <Votes groupId="3" refPrecinctId="58">562</Votes>
+                    <Votes groupId="3" refPrecinctId="113">223</Votes>
+                    <Votes groupId="3" refPrecinctId="112">150</Votes>
+                    <Votes groupId="3" refPrecinctId="115">327</Votes>
+                    <Votes groupId="3" refPrecinctId="114">470</Votes>
+                    <Votes groupId="3" refPrecinctId="109">430</Votes>
+                    <Votes groupId="3" refPrecinctId="108">678</Votes>
+                    <Votes groupId="3" refPrecinctId="111">208</Votes>
+                    <Votes groupId="3" refPrecinctId="110">436</Votes>
+                    <Votes groupId="3" refPrecinctId="117">710</Votes>
+                    <Votes groupId="3" refPrecinctId="116">493</Votes>
+                    <Votes groupId="3" refPrecinctId="90">26</Votes>
+                    <Votes groupId="3" refPrecinctId="91">206</Votes>
+                    <Votes groupId="3" refPrecinctId="88">955</Votes>
+                    <Votes groupId="3" refPrecinctId="89">51</Votes>
+                    <Votes groupId="3" refPrecinctId="94">285</Votes>
+                    <Votes groupId="3" refPrecinctId="95">621</Votes>
+                    <Votes groupId="3" refPrecinctId="92">33</Votes>
+                    <Votes groupId="3" refPrecinctId="93">787</Votes>
+                    <Votes groupId="3" refPrecinctId="96">364</Votes>
+                    <Votes groupId="3" refPrecinctId="97">578</Votes>
+                    <Votes groupId="3" refPrecinctId="18">667</Votes>
+                    <Votes groupId="3" refPrecinctId="19">1287</Votes>
+                    <Votes groupId="3" refPrecinctId="12">220</Votes>
+                    <Votes groupId="3" refPrecinctId="13">3</Votes>
+                    <Votes groupId="3" refPrecinctId="10">383</Votes>
+                    <Votes groupId="3" refPrecinctId="11">159</Votes>
+                    <Votes groupId="3" refPrecinctId="16">199</Votes>
+                    <Votes groupId="3" refPrecinctId="17">234</Votes>
+                    <Votes groupId="3" refPrecinctId="14">85</Votes>
+                    <Votes groupId="3" refPrecinctId="15">281</Votes>
+                    <Votes groupId="3" refPrecinctId="118">841</Votes>
+                    <Votes groupId="3" refPrecinctId="119">69</Votes>
+                    <Votes groupId="3" refPrecinctId="120">7</Votes>
+                    <Votes groupId="3" refPrecinctId="121">706</Votes>
+                    <Votes groupId="3" refPrecinctId="122">1432</Votes>
+                    <Votes groupId="3" refPrecinctId="123">221</Votes>
+                    <Votes groupId="3" refPrecinctId="124">117</Votes>
+                    <Votes groupId="3" refPrecinctId="125">4</Votes>
+                    <Votes groupId="3" refPrecinctId="126">320</Votes>
+                    <Votes groupId="3" refPrecinctId="127">501</Votes>
+                    <Votes groupId="3" refPrecinctId="79">346</Votes>
+                    <Votes groupId="3" refPrecinctId="78">615</Votes>
+                    <Votes groupId="3" refPrecinctId="81">328</Votes>
+                    <Votes groupId="3" refPrecinctId="80">658</Votes>
+                    <Votes groupId="3" refPrecinctId="83">913</Votes>
+                    <Votes groupId="3" refPrecinctId="82">760</Votes>
+                    <Votes groupId="3" refPrecinctId="85">180</Votes>
+                    <Votes groupId="3" refPrecinctId="84">1028</Votes>
+                    <Votes groupId="3" refPrecinctId="87">469</Votes>
+                    <Votes groupId="3" refPrecinctId="86">214</Votes>
+                    <Votes groupId="3" refPrecinctId="9">807</Votes>
+                    <Votes groupId="3" refPrecinctId="8">49</Votes>
+                    <Votes groupId="3" refPrecinctId="155">406</Votes>
+                    <Votes groupId="3" refPrecinctId="1">478</Votes>
+                    <Votes groupId="3" refPrecinctId="3">212</Votes>
+                    <Votes groupId="3" refPrecinctId="2">456</Votes>
+                    <Votes groupId="3" refPrecinctId="5">167</Votes>
+                    <Votes groupId="3" refPrecinctId="4">624</Votes>
+                    <Votes groupId="3" refPrecinctId="7">433</Votes>
+                    <Votes groupId="3" refPrecinctId="6">134</Votes>
+                </Candidate>
+                <Candidate id="4" name="No" partyId="99" pos="4" votes="27397">
+                    <CandidateGroup ballotsCast="100769" groupId="3" overVotes="7" totalVotes="27397" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="137">30</Votes>
+                    <Votes groupId="3" refPrecinctId="136">28</Votes>
+                    <Votes groupId="3" refPrecinctId="135">6</Votes>
+                    <Votes groupId="3" refPrecinctId="134">196</Votes>
+                    <Votes groupId="3" refPrecinctId="133">634</Votes>
+                    <Votes groupId="3" refPrecinctId="132">320</Votes>
+                    <Votes groupId="3" refPrecinctId="131">199</Votes>
+                    <Votes groupId="3" refPrecinctId="130">10</Votes>
+                    <Votes groupId="3" refPrecinctId="129">179</Votes>
+                    <Votes groupId="3" refPrecinctId="128">187</Votes>
+                    <Votes groupId="3" refPrecinctId="33">24</Votes>
+                    <Votes groupId="3" refPrecinctId="34">421</Votes>
+                    <Votes groupId="3" refPrecinctId="35">297</Votes>
+                    <Votes groupId="3" refPrecinctId="36">364</Votes>
+                    <Votes groupId="3" refPrecinctId="29">170</Votes>
+                    <Votes groupId="3" refPrecinctId="30">153</Votes>
+                    <Votes groupId="3" refPrecinctId="31">0</Votes>
+                    <Votes groupId="3" refPrecinctId="32">134</Votes>
+                    <Votes groupId="3" refPrecinctId="37">421</Votes>
+                    <Votes groupId="3" refPrecinctId="38">144</Votes>
+                    <Votes groupId="3" refPrecinctId="144">18</Votes>
+                    <Votes groupId="3" refPrecinctId="145">8</Votes>
+                    <Votes groupId="3" refPrecinctId="140">2</Votes>
+                    <Votes groupId="3" refPrecinctId="138">102</Votes>
+                    <Votes groupId="3" refPrecinctId="139">6</Votes>
+                    <Votes groupId="3" refPrecinctId="142">386</Votes>
+                    <Votes groupId="3" refPrecinctId="143">191</Votes>
+                    <Votes groupId="3" refPrecinctId="141">100</Votes>
+                    <Votes groupId="3" refPrecinctId="22">31</Votes>
+                    <Votes groupId="3" refPrecinctId="21">31</Votes>
+                    <Votes groupId="3" refPrecinctId="20">196</Votes>
+                    <Votes groupId="3" refPrecinctId="26">301</Votes>
+                    <Votes groupId="3" refPrecinctId="25">240</Votes>
+                    <Votes groupId="3" refPrecinctId="24">0</Votes>
+                    <Votes groupId="3" refPrecinctId="23">54</Votes>
+                    <Votes groupId="3" refPrecinctId="28">591</Votes>
+                    <Votes groupId="3" refPrecinctId="27">247</Votes>
+                    <Votes groupId="3" refPrecinctId="154">265</Votes>
+                    <Votes groupId="3" refPrecinctId="153">333</Votes>
+                    <Votes groupId="3" refPrecinctId="147">0</Votes>
+                    <Votes groupId="3" refPrecinctId="146">11</Votes>
+                    <Votes groupId="3" refPrecinctId="148">121</Votes>
+                    <Votes groupId="3" refPrecinctId="150">11</Votes>
+                    <Votes groupId="3" refPrecinctId="149">75</Votes>
+                    <Votes groupId="3" refPrecinctId="152">306</Votes>
+                    <Votes groupId="3" refPrecinctId="151">4</Votes>
+                    <Votes groupId="3" refPrecinctId="157">0</Votes>
+                    <Votes groupId="3" refPrecinctId="55">157</Votes>
+                    <Votes groupId="3" refPrecinctId="56">129</Votes>
+                    <Votes groupId="3" refPrecinctId="53">430</Votes>
+                    <Votes groupId="3" refPrecinctId="54">275</Votes>
+                    <Votes groupId="3" refPrecinctId="51">26</Votes>
+                    <Votes groupId="3" refPrecinctId="52">136</Votes>
+                    <Votes groupId="3" refPrecinctId="49">245</Votes>
+                    <Votes groupId="3" refPrecinctId="50">201</Votes>
+                    <Votes groupId="3" refPrecinctId="57">201</Votes>
+                    <Votes groupId="3" refPrecinctId="44">2</Votes>
+                    <Votes groupId="3" refPrecinctId="43">316</Votes>
+                    <Votes groupId="3" refPrecinctId="46">4</Votes>
+                    <Votes groupId="3" refPrecinctId="45">38</Votes>
+                    <Votes groupId="3" refPrecinctId="40">34</Votes>
+                    <Votes groupId="3" refPrecinctId="39">281</Votes>
+                    <Votes groupId="3" refPrecinctId="42">419</Votes>
+                    <Votes groupId="3" refPrecinctId="41">8</Votes>
+                    <Votes groupId="3" refPrecinctId="48">184</Votes>
+                    <Votes groupId="3" refPrecinctId="47">2</Votes>
+                    <Votes groupId="3" refPrecinctId="68">198</Votes>
+                    <Votes groupId="3" refPrecinctId="69">148</Votes>
+                    <Votes groupId="3" refPrecinctId="70">141</Votes>
+                    <Votes groupId="3" refPrecinctId="71">43</Votes>
+                    <Votes groupId="3" refPrecinctId="72">5</Votes>
+                    <Votes groupId="3" refPrecinctId="73">19</Votes>
+                    <Votes groupId="3" refPrecinctId="74">178</Votes>
+                    <Votes groupId="3" refPrecinctId="75">216</Votes>
+                    <Votes groupId="3" refPrecinctId="76">133</Votes>
+                    <Votes groupId="3" refPrecinctId="77">210</Votes>
+                    <Votes groupId="3" refPrecinctId="156">261</Votes>
+                    <Votes groupId="3" refPrecinctId="104">271</Votes>
+                    <Votes groupId="3" refPrecinctId="105">184</Votes>
+                    <Votes groupId="3" refPrecinctId="102">302</Votes>
+                    <Votes groupId="3" refPrecinctId="103">473</Votes>
+                    <Votes groupId="3" refPrecinctId="100">113</Votes>
+                    <Votes groupId="3" refPrecinctId="101">540</Votes>
+                    <Votes groupId="3" refPrecinctId="98">305</Votes>
+                    <Votes groupId="3" refPrecinctId="99">142</Votes>
+                    <Votes groupId="3" refPrecinctId="106">578</Votes>
+                    <Votes groupId="3" refPrecinctId="107">278</Votes>
+                    <Votes groupId="3" refPrecinctId="67">141</Votes>
+                    <Votes groupId="3" refPrecinctId="66">311</Votes>
+                    <Votes groupId="3" refPrecinctId="65">356</Votes>
+                    <Votes groupId="3" refPrecinctId="64">113</Votes>
+                    <Votes groupId="3" refPrecinctId="63">299</Votes>
+                    <Votes groupId="3" refPrecinctId="62">480</Votes>
+                    <Votes groupId="3" refPrecinctId="61">242</Votes>
+                    <Votes groupId="3" refPrecinctId="60">266</Votes>
+                    <Votes groupId="3" refPrecinctId="59">67</Votes>
+                    <Votes groupId="3" refPrecinctId="58">197</Votes>
+                    <Votes groupId="3" refPrecinctId="113">71</Votes>
+                    <Votes groupId="3" refPrecinctId="112">60</Votes>
+                    <Votes groupId="3" refPrecinctId="115">78</Votes>
+                    <Votes groupId="3" refPrecinctId="114">165</Votes>
+                    <Votes groupId="3" refPrecinctId="109">177</Votes>
+                    <Votes groupId="3" refPrecinctId="108">230</Votes>
+                    <Votes groupId="3" refPrecinctId="111">70</Votes>
+                    <Votes groupId="3" refPrecinctId="110">174</Votes>
+                    <Votes groupId="3" refPrecinctId="117">234</Votes>
+                    <Votes groupId="3" refPrecinctId="116">236</Votes>
+                    <Votes groupId="3" refPrecinctId="90">14</Votes>
+                    <Votes groupId="3" refPrecinctId="91">56</Votes>
+                    <Votes groupId="3" refPrecinctId="88">409</Votes>
+                    <Votes groupId="3" refPrecinctId="89">14</Votes>
+                    <Votes groupId="3" refPrecinctId="94">72</Votes>
+                    <Votes groupId="3" refPrecinctId="95">235</Votes>
+                    <Votes groupId="3" refPrecinctId="92">12</Votes>
+                    <Votes groupId="3" refPrecinctId="93">465</Votes>
+                    <Votes groupId="3" refPrecinctId="96">211</Votes>
+                    <Votes groupId="3" refPrecinctId="97">199</Votes>
+                    <Votes groupId="3" refPrecinctId="18">235</Votes>
+                    <Votes groupId="3" refPrecinctId="19">443</Votes>
+                    <Votes groupId="3" refPrecinctId="12">89</Votes>
+                    <Votes groupId="3" refPrecinctId="13">1</Votes>
+                    <Votes groupId="3" refPrecinctId="10">223</Votes>
+                    <Votes groupId="3" refPrecinctId="11">60</Votes>
+                    <Votes groupId="3" refPrecinctId="16">134</Votes>
+                    <Votes groupId="3" refPrecinctId="17">129</Votes>
+                    <Votes groupId="3" refPrecinctId="14">32</Votes>
+                    <Votes groupId="3" refPrecinctId="15">154</Votes>
+                    <Votes groupId="3" refPrecinctId="118">265</Votes>
+                    <Votes groupId="3" refPrecinctId="119">20</Votes>
+                    <Votes groupId="3" refPrecinctId="120">3</Votes>
+                    <Votes groupId="3" refPrecinctId="121">154</Votes>
+                    <Votes groupId="3" refPrecinctId="122">601</Votes>
+                    <Votes groupId="3" refPrecinctId="123">143</Votes>
+                    <Votes groupId="3" refPrecinctId="124">51</Votes>
+                    <Votes groupId="3" refPrecinctId="125">6</Votes>
+                    <Votes groupId="3" refPrecinctId="126">107</Votes>
+                    <Votes groupId="3" refPrecinctId="127">250</Votes>
+                    <Votes groupId="3" refPrecinctId="79">134</Votes>
+                    <Votes groupId="3" refPrecinctId="78">294</Votes>
+                    <Votes groupId="3" refPrecinctId="81">104</Votes>
+                    <Votes groupId="3" refPrecinctId="80">245</Votes>
+                    <Votes groupId="3" refPrecinctId="83">254</Votes>
+                    <Votes groupId="3" refPrecinctId="82">209</Votes>
+                    <Votes groupId="3" refPrecinctId="85">72</Votes>
+                    <Votes groupId="3" refPrecinctId="84">263</Votes>
+                    <Votes groupId="3" refPrecinctId="87">240</Votes>
+                    <Votes groupId="3" refPrecinctId="86">89</Votes>
+                    <Votes groupId="3" refPrecinctId="9">264</Votes>
+                    <Votes groupId="3" refPrecinctId="8">21</Votes>
+                    <Votes groupId="3" refPrecinctId="155">72</Votes>
+                    <Votes groupId="3" refPrecinctId="1">218</Votes>
+                    <Votes groupId="3" refPrecinctId="3">93</Votes>
+                    <Votes groupId="3" refPrecinctId="2">214</Votes>
+                    <Votes groupId="3" refPrecinctId="5">74</Votes>
+                    <Votes groupId="3" refPrecinctId="4">218</Votes>
+                    <Votes groupId="3" refPrecinctId="7">151</Votes>
+                    <Votes groupId="3" refPrecinctId="6">41</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="11422" id="3" overVotes="2" pos="3.00" precinctsReported="0" title="34-239 Amends Charter Allowing Council to Seek City ..." totalPrecincts="12" underVotes="510" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="11422" groupId="3" overVotes="2" totalVotes="10911" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="30" overVotes="0" refPrecinctId="146" totalVotes="30" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="125" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="285" overVotes="0" refPrecinctId="149" totalVotes="272" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="642" overVotes="0" refPrecinctId="114" totalVotes="625" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1159" overVotes="0" refPrecinctId="104" totalVotes="1117" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1918" overVotes="0" refPrecinctId="103" totalVotes="1829" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1092" overVotes="0" refPrecinctId="102" totalVotes="1044" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1709" overVotes="2" refPrecinctId="101" totalVotes="1642" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="423" overVotes="0" refPrecinctId="100" totalVotes="402" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1068" overVotes="0" refPrecinctId="98" totalVotes="1011" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="934" overVotes="0" refPrecinctId="107" totalVotes="893" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2152" overVotes="0" refPrecinctId="106" totalVotes="2036" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="5" name="Yes" partyId="99" pos="5" votes="5178">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="1" totalVotes="5178" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">500</Votes>
+                    <Votes groupId="3" refPrecinctId="102">474</Votes>
+                    <Votes groupId="3" refPrecinctId="103">911</Votes>
+                    <Votes groupId="3" refPrecinctId="100">194</Votes>
+                    <Votes groupId="3" refPrecinctId="101">795</Votes>
+                    <Votes groupId="3" refPrecinctId="98">415</Votes>
+                    <Votes groupId="3" refPrecinctId="125">5</Votes>
+                    <Votes groupId="3" refPrecinctId="146">13</Votes>
+                    <Votes groupId="3" refPrecinctId="149">130</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1036</Votes>
+                    <Votes groupId="3" refPrecinctId="107">420</Votes>
+                    <Votes groupId="3" refPrecinctId="114">285</Votes>
+                </Candidate>
+                <Candidate id="6" name="No" partyId="99" pos="6" votes="5733">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="1" totalVotes="5733" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">617</Votes>
+                    <Votes groupId="3" refPrecinctId="102">570</Votes>
+                    <Votes groupId="3" refPrecinctId="103">918</Votes>
+                    <Votes groupId="3" refPrecinctId="100">208</Votes>
+                    <Votes groupId="3" refPrecinctId="101">847</Votes>
+                    <Votes groupId="3" refPrecinctId="98">596</Votes>
+                    <Votes groupId="3" refPrecinctId="125">5</Votes>
+                    <Votes groupId="3" refPrecinctId="146">17</Votes>
+                    <Votes groupId="3" refPrecinctId="149">142</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1000</Votes>
+                    <Votes groupId="3" refPrecinctId="107">473</Votes>
+                    <Votes groupId="3" refPrecinctId="114">340</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="11422" id="4" overVotes="2" pos="4.00" precinctsReported="0" title="34-240 Amends Charter to Allow Additional Term Question: ..." totalPrecincts="12" underVotes="420" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="11422" groupId="3" overVotes="2" totalVotes="11001" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="30" overVotes="0" refPrecinctId="146" totalVotes="30" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="125" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="285" overVotes="0" refPrecinctId="149" totalVotes="276" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="642" overVotes="0" refPrecinctId="114" totalVotes="628" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1159" overVotes="0" refPrecinctId="104" totalVotes="1118" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1918" overVotes="0" refPrecinctId="103" totalVotes="1838" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1092" overVotes="0" refPrecinctId="102" totalVotes="1052" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1709" overVotes="0" refPrecinctId="101" totalVotes="1668" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="423" overVotes="0" refPrecinctId="100" totalVotes="407" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1068" overVotes="2" refPrecinctId="98" totalVotes="1022" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="934" overVotes="0" refPrecinctId="107" totalVotes="898" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2152" overVotes="0" refPrecinctId="106" totalVotes="2054" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="7" name="Yes" partyId="99" pos="7" votes="2258">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="1" totalVotes="2258" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">251</Votes>
+                    <Votes groupId="3" refPrecinctId="102">214</Votes>
+                    <Votes groupId="3" refPrecinctId="103">398</Votes>
+                    <Votes groupId="3" refPrecinctId="100">73</Votes>
+                    <Votes groupId="3" refPrecinctId="101">327</Votes>
+                    <Votes groupId="3" refPrecinctId="98">212</Votes>
+                    <Votes groupId="3" refPrecinctId="125">3</Votes>
+                    <Votes groupId="3" refPrecinctId="146">6</Votes>
+                    <Votes groupId="3" refPrecinctId="149">50</Votes>
+                    <Votes groupId="3" refPrecinctId="106">449</Votes>
+                    <Votes groupId="3" refPrecinctId="107">152</Votes>
+                    <Votes groupId="3" refPrecinctId="114">123</Votes>
+                </Candidate>
+                <Candidate id="8" name="No" partyId="99" pos="8" votes="8743">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="1" totalVotes="8743" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">867</Votes>
+                    <Votes groupId="3" refPrecinctId="102">838</Votes>
+                    <Votes groupId="3" refPrecinctId="103">1440</Votes>
+                    <Votes groupId="3" refPrecinctId="100">334</Votes>
+                    <Votes groupId="3" refPrecinctId="101">1341</Votes>
+                    <Votes groupId="3" refPrecinctId="98">810</Votes>
+                    <Votes groupId="3" refPrecinctId="125">7</Votes>
+                    <Votes groupId="3" refPrecinctId="146">24</Votes>
+                    <Votes groupId="3" refPrecinctId="149">226</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1605</Votes>
+                    <Votes groupId="3" refPrecinctId="107">746</Votes>
+                    <Votes groupId="3" refPrecinctId="114">505</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="11422" id="5" overVotes="0" pos="5.00" precinctsReported="0" title="34-241 Authorizes General Obligation Bonds For Tigard ..." totalPrecincts="12" underVotes="102" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="11422" groupId="3" overVotes="0" totalVotes="11320" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="30" overVotes="0" refPrecinctId="146" totalVotes="30" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="10" overVotes="0" refPrecinctId="125" totalVotes="10" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="285" overVotes="0" refPrecinctId="149" totalVotes="285" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="642" overVotes="0" refPrecinctId="114" totalVotes="638" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1159" overVotes="0" refPrecinctId="104" totalVotes="1156" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1918" overVotes="0" refPrecinctId="103" totalVotes="1895" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1092" overVotes="0" refPrecinctId="102" totalVotes="1089" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1709" overVotes="0" refPrecinctId="101" totalVotes="1697" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="423" overVotes="0" refPrecinctId="100" totalVotes="412" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="1068" overVotes="0" refPrecinctId="98" totalVotes="1060" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="934" overVotes="0" refPrecinctId="107" totalVotes="923" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2152" overVotes="0" refPrecinctId="106" totalVotes="2125" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="9" name="Yes" partyId="99" pos="9" votes="3877">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="0" totalVotes="3877" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">504</Votes>
+                    <Votes groupId="3" refPrecinctId="102">401</Votes>
+                    <Votes groupId="3" refPrecinctId="103">686</Votes>
+                    <Votes groupId="3" refPrecinctId="100">138</Votes>
+                    <Votes groupId="3" refPrecinctId="101">500</Votes>
+                    <Votes groupId="3" refPrecinctId="98">390</Votes>
+                    <Votes groupId="3" refPrecinctId="125">2</Votes>
+                    <Votes groupId="3" refPrecinctId="146">11</Votes>
+                    <Votes groupId="3" refPrecinctId="149">102</Votes>
+                    <Votes groupId="3" refPrecinctId="106">648</Votes>
+                    <Votes groupId="3" refPrecinctId="107">282</Votes>
+                    <Votes groupId="3" refPrecinctId="114">213</Votes>
+                </Candidate>
+                <Candidate id="10" name="No" partyId="99" pos="10" votes="7443">
+                    <CandidateGroup ballotsCast="11422" groupId="3" overVotes="0" totalVotes="7443" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="104">652</Votes>
+                    <Votes groupId="3" refPrecinctId="102">688</Votes>
+                    <Votes groupId="3" refPrecinctId="103">1209</Votes>
+                    <Votes groupId="3" refPrecinctId="100">274</Votes>
+                    <Votes groupId="3" refPrecinctId="101">1197</Votes>
+                    <Votes groupId="3" refPrecinctId="98">670</Votes>
+                    <Votes groupId="3" refPrecinctId="125">8</Votes>
+                    <Votes groupId="3" refPrecinctId="146">19</Votes>
+                    <Votes groupId="3" refPrecinctId="149">183</Votes>
+                    <Votes groupId="3" refPrecinctId="106">1477</Votes>
+                    <Votes groupId="3" refPrecinctId="107">641</Votes>
+                    <Votes groupId="3" refPrecinctId="114">425</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="4965" id="6" overVotes="0" pos="6.00" precinctsReported="0" title="34-242 Proposal to Annex 101.79 Acres into the City of ..." totalPrecincts="3" underVotes="29" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="4965" groupId="3" overVotes="0" totalVotes="4936" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="1935" overVotes="0" refPrecinctId="133" totalVotes="1928" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="2075" overVotes="0" refPrecinctId="122" totalVotes="2062" writeinVotes="0"></ContestGroupVotes>
+                    <ContestGroupVotes ballotsCast="955" overVotes="0" refPrecinctId="152" totalVotes="946" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="11" name="Yes" partyId="99" pos="11" votes="1520">
+                    <CandidateGroup ballotsCast="4965" groupId="3" overVotes="0" totalVotes="1520" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="133">533</Votes>
+                    <Votes groupId="3" refPrecinctId="122">667</Votes>
+                    <Votes groupId="3" refPrecinctId="152">320</Votes>
+                </Candidate>
+                <Candidate id="12" name="No" partyId="99" pos="12" votes="3416">
+                    <CandidateGroup ballotsCast="4965" groupId="3" overVotes="0" totalVotes="3416" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="133">1395</Votes>
+                    <Votes groupId="3" refPrecinctId="122">1395</Votes>
+                    <Votes groupId="3" refPrecinctId="152">626</Votes>
+                </Candidate>
+            </Contest>
+            <Contest ballotsCast="48" id="7" overVotes="0" pos="7.00" precinctsReported="0" title="3-468 Vote on forming a Coffee Creek Urban Renewal ..." totalPrecincts="1" underVotes="3" voteFor="1" writeinVotes="0">
+                <ContestGroup ballotsCast="48" groupId="3" overVotes="0" totalVotes="45" writeinVotes="0">
+                    <ContestGroupVotes ballotsCast="48" overVotes="0" refPrecinctId="130" totalVotes="45" writeinVotes="0"></ContestGroupVotes>
+                </ContestGroup>
+                <Candidate id="13" name="Yes" partyId="99" pos="13" votes="28">
+                    <CandidateGroup ballotsCast="48" groupId="3" overVotes="0" totalVotes="28" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="130">28</Votes>
+                </Candidate>
+                <Candidate id="14" name="No" partyId="99" pos="14" votes="17">
+                    <CandidateGroup ballotsCast="48" groupId="3" overVotes="0" totalVotes="17" writeinVotes="0"></CandidateGroup>
+                    <Votes groupId="3" refPrecinctId="130">17</Votes>
+                </Candidate>
+            </Contest>
+        </ContestList>
+    </Election>
+</Owner>
