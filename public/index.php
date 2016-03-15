@@ -1,4 +1,25 @@
-<?php $xml = false; ?>
+<?php
+    /**
+     * Bootstrap the application
+     */
+    require(__DIR__.'/../app/bootstrap.php');
+
+    /**
+     * Instantiate the class
+     */
+    $e = new Washco\Election;
+
+    /**
+     * Set class variables
+     */
+    $e->importDirectory = $data_directory;
+
+    /**
+     * Build the xml forms, or not there are none, and assign to a variable
+     */
+    $xml = $e->findXmlFiles();
+    $xml_form_content = $e->buildXmlFormContent($xml);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,8 +73,8 @@
             padding: .5em; }
         .sidebar ol>li {
             display: list-item;
-            padding: .5em;
-            margin-left: .5em; }
+            padding-right: .5em;
+            margin-left: .7em; }
         .input-file {
             border: 1px solid #4e707e;
             padding: 1em;
@@ -66,11 +87,10 @@
             padding-top: 1em;
             text-align: right; }
         h5.input-file-title {
-            margin: 0;
-            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: .7em;
             color: #4e707e;
-            text-shadow: none;
-            padding: .5em; }
+            font-size: 1.8em; }
         .add-top-padding {
             padding-top: 2em; }
     </style>
@@ -103,77 +123,39 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="https://s3.amazonaws.com/washcomultimedia/web/img/logo.png" class="img-responsive img-center img-padded" />
-                <nav class="hidden-print sidebar">
-                    <h4 class="sidebar-heading">Instructions</h4>
-                    <ol>
-                        <li>Drop one or more XML files into the <strong>input</strong> directory and refresh this page.</li>
-                        <li>Your file(s) will appear in the main area with an option to add a Next Poll Time and a Process action.</li>
-                    </ol>
-                </nav>
             </div><!-- /.col -->
 
             <div class="col-md-9">
                 <div class="page-header">
                     <h1>ClearBallot XML Parsing Tool</h1>
                 </div>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
 
-                <div class="content add-top-padding">
-                <?php if($xml): ?>
-                <div class="input-file">
-                    <div class="media">
-                    <h5 class="input-file-title">filename.xml</h5>
-                      <div class="media-left">
-                        <span class="media-object">
-                            <i class="fa fa-5x fa-file-text"></i>
-                        </span><!-- /.media-object -->
-                      </div>
-                      <div class="media-body">
-                          <div class="form-group">
-                            <label for="time" class="control-label">Next Poll Time</label>
-                            <select id="time" class="form-control">
-                            <option value="0">None</option>
-                            <?php for($i = 0; $i < 24; $i++): ?>
-                          <option value="<?= $i; ?>"><?= $i % 12 ? $i % 12 : 12 ?>:00 <?= $i >= 12 ? 'pm' : 'am' ?></option>
-                            <?php endfor ?>
-                            </select>
-                            </div><!-- /.form-group -->
-                        </div><!-- /.media-body -->
-                    </div><!-- /.media -->
-                    <div class="input-file-actions">
-                        <a href="#" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;Preview</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</a>
-                    </div><!-- /.media-actions -->
-                </div><!-- /.input-file -->
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="hidden-print sidebar">
+                    <?php if($xml): ?>
+                    <h4 class="sidebar-heading">Instructions</h4>
+                    <ol>
+                        <li>If appropriate, select the Next Poll Time for the file you wish to process.</li>
+                        <li>Click Process</li>
+                    </ol>
+                    <h4 class="sidebar-heading">Note</h4>
+                    <p class="instructions">Once a file is processed, the XML file will be moved into the <strong>processed/xml</strong> directory with an appropriate timestamp, and the resulting HTML file will be available to you in the <strong>processed/html</strong> directory.</p>
+                    <?php else: ?>
+                    <h4 class="sidebar-heading">Instructions</h4>
+                    <ol>
+                        <li>Drop one or more ClearBallot formatted XML files into the <strong>input</strong> directory and refresh this page.</li>
+                        <li>Your file(s) will appear in the main area with an option to add a Next Poll Time and a Process action.</li>
+                    </ol>
+                    <?php endif; ?>
+                </nav>
+            </div><!-- /.col -->
 
-                <div class="input-file">
-                    <div class="media">
-                    <h5 class="input-file-title">filename.xml</h5>
-                      <div class="media-left">
-                        <span class="media-object">
-                            <i class="fa fa-5x fa-file-text"></i>
-                        </span><!-- /.media-object -->
-                      </div>
-                      <div class="media-body">
-                          <div class="form-group">
-                            <label for="time" class="control-label">Next Poll Time</label>
-                            <select id="time" class="form-control">
-                            <option value="0">None</option>
-                            <?php for($i = 0; $i < 24; $i++): ?>
-                          <option value="<?= $i; ?>"><?= $i % 12 ? $i % 12 : 12 ?>:00 <?= $i >= 12 ? 'pm' : 'am' ?></option>
-                            <?php endfor ?>
-                            </select>
-                            </div><!-- /.form-group -->
-                        </div><!-- /.media-body -->
-                    </div><!-- /.media -->
-                    <div class="input-file-actions">
-                        <a href="#" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;Preview</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</a>
-                    </div><!-- /.media-actions -->
-                </div><!-- /.input-file -->
-                <?php else: ?>
-                <h3>No XML file(s) found!</h3>
-                <p>Place one or more XML files in the <strong>/input</strong> directory and refresh this page.</p>
-                <?php endif; ?>
+            <div class="col-md-9">
+                <div class="content">
+                <?php echo $xml_form_content; ?>
                 </div><!-- /.content -->
             </div><!-- /.col -->
         </div><!-- /.row -->

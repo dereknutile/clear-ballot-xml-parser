@@ -7,6 +7,9 @@ class Election {
     public $appTitle = 'Washington County Election Results';
     public $logoUrl = '';
 
+    // Full path to data import directory
+    public $importDirectory = '';
+
     // Full path to data import file
     public $importFile = '';
 
@@ -16,8 +19,12 @@ class Election {
     // path to partials
     public $partialsDirectory;
 
+    // Array of XML files read from the input directory
+    // private $xmlFiles = array();
+
     // This is the working string we use to build the output
     private $outputString = '';
+
 
     /**
      * Create a new generic Election object.
@@ -190,6 +197,61 @@ class Election {
     }
 
     /**
+     * Finds all xml files in the data directory
+     *
+     * @return string
+     */
+    public function findXmlFiles ()
+    {
+        $output = array();
+        $files = scandir($this->importDirectory);
+
+        if($files){
+            foreach($files as $file){
+                // remove the linux dots
+                if(!in_array($file, array(".","..",".gitignore"))){
+                    $output[] = $file;
+                }
+            }
+        }
+
+        return $output;
+    }
+
+    /**
+     * Finds all xml files in the data directory
+     *
+     * @param array $xml is the array of xml files
+     * @return string
+     */
+    public function buildXmlFormContent ($xml = null)
+    {
+        if($xml){
+            $this->appendOutputString('<h2>'.count($xml).' XML file(s) found!</h2>');
+            foreach($xml as $file){
+                $this->appendOutputString('<div class="input-file">');
+                $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i> '.$file.'</h5>');
+                $this->appendOutputString('<div class="form-group">');
+                $this->appendOutputString('<label for="time" class="control-label">Next Poll Time</label>');
+                $this->appendOutputString('<select id="time" class="form-control">');
+                $this->appendOutputString('<option value="none">None</option>');
+                $this->appendOutputString($this->buildTimeDropper());
+                // $this->appendOutputString('<a href="#" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;Preview</a>');
+                $this->appendOutputString('</select>');
+                $this->appendOutputString('</div><!-- /.form-group -->');
+                $this->appendOutputString('<div class="input-file-actions">');
+                $this->appendOutputString('<a href="#" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</a>');
+                $this->appendOutputString('</div><!-- /.input-file-actions -->');
+                $this->appendOutputString('</div><!-- /.input-file -->');
+            }
+        } else {
+            $this->outputString = '<h2>No XML file(s) found!</h2>';
+        }
+
+        return $this->outputString;
+    }
+
+    /**
      * Debug helper function
      * Dump a variable with a little HTML dressing for readability.
      *
@@ -226,6 +288,27 @@ class Election {
         echo ">";
         echo $string;
         echo "</".$tag.">";
+    }
+
+    /**
+     * Builds a time drop-down
+     *
+     * @return string
+     */
+    private function buildTimeDropper ()
+    {
+        $output = '';
+
+        for($i = 0; $i < 24; $i++){
+            if($i<=12){
+                $value = $i.":00 AM";
+            } else {
+                $value = $i.":00 PM";
+            }
+            $output .= '<option value="'.$i.'">'.$value.'</option>';
+        }
+
+        return $output;
     }
 }
 ?>
