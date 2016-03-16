@@ -209,7 +209,7 @@ class Election {
         if($files){
             foreach($files as $file){
                 // remove the linux dots
-                if(!in_array($file, array(".","..",".gitignore"))){
+                if(!in_array($file, array(".","..",".DS_Store",".gitignore"))){
                     $output[] = $file;
                 }
             }
@@ -236,7 +236,6 @@ class Election {
                 $this->appendOutputString('<select id="time" class="form-control">');
                 $this->appendOutputString('<option value="none">None</option>');
                 $this->appendOutputString($this->buildTimeDropper());
-                // $this->appendOutputString('<a href="#" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;Preview</a>');
                 $this->appendOutputString('</select>');
                 $this->appendOutputString('</div><!-- /.form-group -->');
                 $this->appendOutputString('<div class="input-file-actions">');
@@ -300,11 +299,7 @@ class Election {
         $output = '';
 
         for($i = 0; $i < 24; $i++){
-            if($i<=12){
-                $value = $i.":00 AM";
-            } else {
-                $value = $i.":00 PM";
-            }
+            $value = date("g:iA", strtotime("$i:00"));
             $output .= '<option value="'.$i.'">'.$value.'</option>';
         }
 
