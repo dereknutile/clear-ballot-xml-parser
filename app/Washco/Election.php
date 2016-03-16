@@ -239,7 +239,7 @@ class Election {
                 $this->appendOutputString('</select>');
                 $this->appendOutputString('</div><!-- /.form-group -->');
                 $this->appendOutputString('<div class="input-file-actions">');
-                $this->appendOutputString('<a href="#" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</a>');
+                $this->appendOutputString('<a href="test.php?file='.htmlentities($file).'" class="btn btn-primary" data-process="'.$file.'"><i class="fa fa-cogs"></i>&nbsp;Process</a>');
                 $this->appendOutputString('</div><!-- /.input-file-actions -->');
                 $this->appendOutputString('</div><!-- /.input-file -->');
             }
