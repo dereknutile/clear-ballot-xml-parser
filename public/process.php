@@ -1,4 +1,10 @@
 <?php
+
+echo "<h5>Post Test</h5>";
+var_dump($_POST);
+
+die();
+
     /**
      * Bootstrap the application
      */

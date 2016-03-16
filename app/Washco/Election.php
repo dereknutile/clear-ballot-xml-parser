@@ -208,7 +208,7 @@ class Election {
 
         if($files){
             foreach($files as $file){
-                // remove the linux dots
+                // remove the hidden and system files from results
                 if(!in_array($file, array(".","..",".DS_Store",".gitignore"))){
                     $output[] = $file;
                 }
@@ -227,21 +227,32 @@ class Election {
     public function buildXmlFormContent ($xml = null)
     {
         if($xml){
+            $counter = 1;
             $this->appendOutputString('<h2>'.count($xml).' XML file(s) found!</h2>');
             foreach($xml as $file){
                 $this->appendOutputString('<div class="input-file">');
-                $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i> '.$file.'</h5>');
+                $this->appendOutputString('<form action="process.php" method="post" id="form-'.$counter.'">');
+                $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i>&nbsp;'.urldecode($file).'</h5>');
+
+                $this->appendOutputString('<div class="form-group">');
+                $this->appendOutputString('<label for="time" class="control-label">Next Poll Day (YYYY-MM-DD)</label>');
+                $this->appendOutputString('<input type="text" class="form-control" name="date" placeholder="'.date('Y-m-d').'">');
+                $this->appendOutputString('</div><!-- /.form-group -->');
+
                 $this->appendOutputString('<div class="form-group">');
                 $this->appendOutputString('<label for="time" class="control-label">Next Poll Time</label>');
-                $this->appendOutputString('<select id="time" class="form-control">');
+                $this->appendOutputString('<select name="time" class="form-control">');
                 $this->appendOutputString('<option value="none">None</option>');
                 $this->appendOutputString($this->buildTimeDropper());
                 $this->appendOutputString('</select>');
                 $this->appendOutputString('</div><!-- /.form-group -->');
+
                 $this->appendOutputString('<div class="input-file-actions">');
-                $this->appendOutputString('<a href="test.php?file='.htmlentities($file).'" class="btn btn-primary" data-process="'.$file.'"><i class="fa fa-cogs"></i>&nbsp;Process</a>');
+                $this->appendOutputString('<button type="submit" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</button>');
                 $this->appendOutputString('</div><!-- /.input-file-actions -->');
+                $this->appendOutputString('</form>');
                 $this->appendOutputString('</div><!-- /.input-file -->');
+                $counter++;
             }
         } else {
             $this->outputString = '<h2>No XML file(s) found!</h2>';
