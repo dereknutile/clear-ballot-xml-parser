@@ -1,10 +1,38 @@
 <?php
+    /**
+     * Bootstrap the application
+     */
+    require(__DIR__.'/../app/bootstrap.php');
 
-    $next = '';
+    /**
+     * Instantiate the class
+     */
+    $e = new Washco\Election;
 
-    if($_GET['next']){
-        $next = htmlspecialchars( $_GET['next'] );
+    /**
+     * Set class variables
+     */
+    $e->importFile = $data_directory.$import_file;
+    $e->outputFile = $output_directory.$output_file;
+    echo $e->outputFile;
+    $e->partialsDirectory = $partials_directory;
+    $e->appTitle = $app_title;
+    $e->logoUrl = $logo_url;
+    if(isset($next)){
+        $e->nextTime = $next;
     }
 
-    include(__DIR__.'/index.php');
-    echo "Complete.";
+    /**
+     * Build the html string
+     */
+    $e->addPartial('head.html');
+    $e->addPartial('nav.html');
+    $e->processImportFile();
+    $e->addPartial('foot.html');
+
+    /**
+     * Write the completed html string
+     */
+    $e->writeOutputFile(false);
+    $e->dd("Parse Complete.")
+?>

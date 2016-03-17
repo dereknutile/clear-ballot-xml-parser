@@ -1,15 +1,5 @@
 <?php
 
-echo "<h5>Post Test</h5>";
-var_dump($_POST);
-if($_POST['file']){
-    echo "<p>File: ".htmlspecialchars($_POST['file'])."</p>";
-} else {
-    echo "<p>No file posted.</p>";
-}
-
-die();
-
     /**
      * Bootstrap the application
      */
@@ -44,5 +34,19 @@ die();
      * Write the completed html string
      */
     $e->writeOutputFile(false);
-    $e->dd("Parse Complete.")
+
+    include($partials_directory.'/head.html');
+    include($partials_directory.'/nav.html');
+
+    echo '<div class="container add-top-padding">';
+    var_dump($_POST);
+    if($_POST['file']){
+        echo "<p>File: ".htmlspecialchars($_POST['file'])."</p>";
+    } else {
+        echo "<p>No file posted.</p>";
+    }
+
+    echo '</div>';
+
+    include($partials_directory.'/foot.html');
 ?>
