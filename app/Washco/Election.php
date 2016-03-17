@@ -74,12 +74,35 @@ class Election {
                 $run_time = $exploded_report_time[1];
             }
 
+            $this->appendOutputString('<div class="container">');
             $this->appendOutputString('<div class="row">');
             $this->appendOutputString('<div class="col-md-3">');
             if(strlen($this->logoUrl)>0){
                 $this->appendOutputString('<img src="'.$this->logoUrl.'" class="img-responsive img-center img-padded" />');
             }
+            $this->appendOutputString('</div><!-- /.col -->');
 
+            $this->appendOutputString('<div class="col-md-9">');
+            $this->appendOutputString('<div class="page-header">');
+            $this->appendOutputString('<h1>'.$page_title.'</h1>');
+            $this->appendOutputString('</div>');
+            if($this->nextTime){
+                $this->appendOutputString('<p class="alert alert-warning">Next run time: '.$this->nextTime.'</p>');
+            }
+            $this->appendOutputString('</div><!-- /.col -->');
+            $this->appendOutputString('</div><!-- /.row -->');
+            $this->appendOutputString('</div><!-- /.container -->');
+
+
+// <div class="unofficial">
+//     <div class="container">
+//         <p class="unofficial-copy">Unofficial Washington County Election Results</p>
+//     </div>
+// </div>
+
+            $this->appendOutputString('<div class="container add-top-padding">');
+            $this->appendOutputString('<div class="row">');
+            $this->appendOutputString('<div class="col-md-3">');
             $this->appendOutputString('<nav class="hidden-print sidebar">');
             $this->appendOutputString('<h4 class="sidebar-heading">Contests</h4>');
             $this->appendOutputString('<ul class="list-unstyled">');
@@ -91,13 +114,8 @@ class Election {
             $this->appendOutputString('</nav>');
 
             $this->appendOutputString('</div><!-- /.col -->');
+
             $this->appendOutputString('<div class="col-md-9">');
-            $this->appendOutputString('<div class="page-header">');
-            $this->appendOutputString('<h1>'.$page_title.'</h1>');
-            $this->appendOutputString('</div>');
-            if($this->nextTime){
-                $this->appendOutputString('<p class="alert alert-warning">Next run time: '.$this->nextTime.'</p>');
-            }
             $this->appendOutputString('<a name="summary"></a>');
             $this->appendOutputString('<h3>Summary</h3>');
 
@@ -157,6 +175,7 @@ class Election {
 
         $this->appendOutputString('</div><!-- /.col -->');
         $this->appendOutputString('</div><!-- /.row -->');
+        $this->appendOutputString('</div><!-- /.container -->');
     }
 
     /**
@@ -236,8 +255,9 @@ class Election {
                 $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i>&nbsp;'.urldecode($file).'<small >'.sprintf("%.2f", ($size / 1000)/1000).'mb</small></h5>');
 
                 $this->appendOutputString('<div class="form-group">');
-                $this->appendOutputString('<label for="status" class="control-label">Status</label>');
+                $this->appendOutputString('<label for="status" class="control-label">Choose a Status Banner</label>');
                 $this->appendOutputString('<select name="status" class="form-control">');
+                $this->appendOutputString('<option value="none">No Banner</option>');
                 $this->appendOutputString('<option value="unofficial">Unofficial Results Banner</option>');
                 $this->appendOutputString('<option value="official">Final Results Banner</option>');
                 $this->appendOutputString('</select>');
