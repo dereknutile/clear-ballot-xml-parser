@@ -76,21 +76,26 @@
             padding-right: .5em;
             margin-left: .7em; }
         .input-file {
-            border: 1px solid #4e707e;
+            /*border: 1px solid #4e707e;*/
             padding: 1em;
             margin-bottom: 2em;
-            background: #fff;
+            background: #edeae2;
             box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); }
         .input-file-actions {
             margin-top: 1em;
-            border-top: 1px solid #eee;
             padding-top: 1em;
             text-align: right; }
         h5.input-file-title {
             margin-top: 0;
             margin-bottom: .7em;
+            padding-bottom: .5em;
             color: #4e707e;
             font-size: 1.8em; }
+        h5.input-file-title small{
+            padding-top: 6px;
+            font-size: .7em;
+            text-align: right;
+            float: right; }
         .add-top-padding {
             padding-top: 2em; }
     </style>
