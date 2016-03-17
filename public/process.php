@@ -2,6 +2,11 @@
 
 echo "<h5>Post Test</h5>";
 var_dump($_POST);
+if($_POST['file']){
+    echo "<p>File: ".htmlspecialchars($_POST['file'])."</p>";
+} else {
+    echo "<p>No file posted.</p>";
+}
 
 die();
 
