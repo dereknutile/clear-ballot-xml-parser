@@ -228,15 +228,24 @@ class Election {
     {
         if($xml){
             $counter = 1;
-            $this->appendOutputString('<h2>'.count($xml).' XML file(s) found!</h2>');
+            $this->appendOutputString('<h3>'.count($xml).' XML file(s) found!</h3>');
             foreach($xml as $file){
+                $size = filesize($this->importDirectory.$file);
                 $this->appendOutputString('<div class="input-file">');
                 $this->appendOutputString('<form action="process.php" method="post" id="form-'.$counter.'">');
-                $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i>&nbsp;'.urldecode($file).'</h5>');
+                $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i>&nbsp;'.urldecode($file).'<small >'.sprintf("%.2f", ($size / 1000)/1000).'mb</small></h5>');
 
                 $this->appendOutputString('<div class="form-group">');
-                $this->appendOutputString('<label for="time" class="control-label">Next Poll Day (YYYY-MM-DD)</label>');
-                $this->appendOutputString('<input type="text" class="form-control" name="date" placeholder="'.date('Y-m-d').'">');
+                $this->appendOutputString('<label for="status" class="control-label">Status</label>');
+                $this->appendOutputString('<select name="status" class="form-control">');
+                $this->appendOutputString('<option value="unofficial">Unofficial Results Banner</option>');
+                $this->appendOutputString('<option value="official">Final Results Banner</option>');
+                $this->appendOutputString('</select>');
+                $this->appendOutputString('</div><!-- /.form-group -->');
+
+                $this->appendOutputString('<div class="form-group">');
+                $this->appendOutputString('<label for="time" class="control-label">Next Poll Day</label>');
+                $this->appendOutputString('<input type="text" class="form-control" name="date" placeholder="Thursday, November, 7">');
                 $this->appendOutputString('</div><!-- /.form-group -->');
 
                 $this->appendOutputString('<div class="form-group">');
@@ -248,6 +257,7 @@ class Election {
                 $this->appendOutputString('</div><!-- /.form-group -->');
 
                 $this->appendOutputString('<div class="input-file-actions">');
+                $this->appendOutputString('<input type="hidden" name="file" value="'.htmlentities($file).'">');
                 $this->appendOutputString('<button type="submit" class="btn btn-primary"><i class="fa fa-cogs"></i>&nbsp;Process</button>');
                 $this->appendOutputString('</div><!-- /.input-file-actions -->');
                 $this->appendOutputString('</form>');
@@ -255,7 +265,7 @@ class Election {
                 $counter++;
             }
         } else {
-            $this->outputString = '<h2>No XML file(s) found!</h2>';
+            $this->outputString = '<h3>No XML file(s) found!</h3>';
         }
 
         return $this->outputString;
@@ -310,7 +320,7 @@ class Election {
         $output = '';
 
         for($i = 0; $i < 24; $i++){
-            $value = date("g:iA", strtotime("$i:00"));
+            $value = date("g:i A", strtotime("$i:00"));
             $output .= '<option value="'.$i.'">'.$value.'</option>';
         }
 
