@@ -264,12 +264,12 @@ class Election {
                 $this->appendOutputString('</div><!-- /.form-group -->');
 
                 $this->appendOutputString('<div class="form-group">');
-                $this->appendOutputString('<label for="time" class="control-label">Next Poll Day</label>');
+                $this->appendOutputString('<label for="time" class="control-label">Next Update Day (optional)</label>');
                 $this->appendOutputString('<input type="text" class="form-control" name="date" placeholder="Thursday, November, 7">');
                 $this->appendOutputString('</div><!-- /.form-group -->');
 
                 $this->appendOutputString('<div class="form-group">');
-                $this->appendOutputString('<label for="time" class="control-label">Next Poll Time</label>');
+                $this->appendOutputString('<label for="time" class="control-label">Next Update Time (optional)</label>');
                 $this->appendOutputString('<select name="time" class="form-control">');
                 $this->appendOutputString('<option value="none">None</option>');
                 $this->appendOutputString($this->buildTimeDropper());
