@@ -10,23 +10,34 @@
      */
     $e = new Washco\Election;
 
-    // array(4) { ["status"]=> string(4) "none" ["date"]=> string(0) "" ["time"]=> string(4) "none" ["file"]=> string(23) "import-washco-empty.xml" }
-
     $output = "No input file";
 
     if($_POST['file']){
 
         $file = html_entity_decode(trim($_POST['file']));
+
         /**
          * Set class variables
          */
-        $e->importFile = $data_directory.$file;
-        $e->outputFile = $output_directory.$output_file;
+        $e->inputDirectory = $data_directory;
+        $e->importFile = $file;
+        $e->outputDirectory = $output_directory;
+        $e->outputFile = $output_file;
         $e->partialsDirectory = $partials_directory;
         $e->appTitle = $app_title;
         $e->logoUrl = $logo_url;
-        if(isset($next)){
-            $e->nextTime = $next;
+
+        /**
+         * Set POST variables
+         */
+        if($_POST['status']){
+            $e->postStatus = $_POST['status'];
+        }
+        if($_POST['date']){
+            $e->postDate = $_POST['date'];
+        }
+        if($_POST['time']){
+            $e->postTime = $_POST['time'];
         }
 
         /**
