@@ -12,7 +12,7 @@
     /**
      * Set class variables
      */
-    $e->importDirectory = $data_directory;
+    $e->inputDirectory = $data_directory;
 
     /**
      * Build the xml forms, or not there are none, and assign to a variable
