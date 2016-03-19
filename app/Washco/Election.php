@@ -7,17 +7,25 @@ class Election {
     public $appTitle = 'Washington County Election Results';
     public $logoUrl = '';
 
-    // Full path to data import directory
-    public $importDirectory = '';
+    // Full path to data input directory
+    public $inputDirectory = '';
 
-    // Full path to data import file
+    // Name of the input file
     public $importFile = '';
 
-    // Full path to export HTML
-    public $outputFile;
+    // Full path to data output directory
+    public $outputDirectory = '';
+
+    // Name of the output HTML
+    public $outputFile = '';
 
     // path to partials
     public $partialsDirectory;
+
+    // posted variables
+    public $postStatus = 'none';
+    public $postDate = null;
+    public $postTime = null;
 
     // Array of XML files read from the input directory
     // private $xmlFiles = array();
@@ -57,7 +65,7 @@ class Election {
         $page_title = $this->appTitle;
 
         // Load the target xml file into an XML object using simplexml_load_file
-        $xml = simplexml_load_file($this->importFile);
+        $xml = simplexml_load_file($this->inputDirectory.$this->importFile);
 
         if($xml){
             /**
@@ -93,12 +101,21 @@ class Election {
             $this->appendOutputString('</div><!-- /.row -->');
             $this->appendOutputString('</div><!-- /.container -->');
 
-
-// <div class="unofficial">
-//     <div class="container">
-//         <p class="unofficial-copy">Unofficial Washington County Election Results</p>
-//     </div>
-// </div>
+            if($this->postStatus != 'none'){
+                $this->appendOutputString('<div class="election-status">');
+                $this->appendOutputString('<div class="container">');
+                if($this->postStatus == 'official'){
+                    $this->appendOutputString('<p class="election-status-copy">Washington County Final Election Results</p>');
+                }
+                if($this->postStatus == 'unofficial'){
+                    $this->appendOutputString('<p class="election-status-copy">Unofficial Washington County Election Results</p>');
+                }
+                if($this->postDate or $this->postTime){
+                    // $this->appendOutputString('<p class="election-status-copy">Unofficial Washington County Election Results</p>');
+                }
+                $this->appendOutputString('</div>');
+                $this->appendOutputString('</div>');
+            }
 
             $this->appendOutputString('<div class="container add-top-padding">');
             $this->appendOutputString('<div class="row">');
@@ -209,9 +226,9 @@ class Election {
      */
     public function writeOutputFile($append = true){
         if($append){
-            file_put_contents($this->outputFile, $this->outputString, FILE_APPEND);
+            file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString, FILE_APPEND);
         } else {
-            file_put_contents($this->outputFile, $this->outputString);
+            file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString);
         }
     }
 
@@ -223,7 +240,7 @@ class Election {
     public function findXmlFiles ()
     {
         $output = array();
-        $files = scandir($this->importDirectory);
+        $files = scandir($this->inputDirectory);
 
         if($files){
             foreach($files as $file){
@@ -249,7 +266,7 @@ class Election {
             $counter = 1;
             $this->appendOutputString('<h3>'.count($xml).' XML file(s) found!</h3>');
             foreach($xml as $file){
-                $size = filesize($this->importDirectory.$file);
+                $size = filesize($this->inputDirectory.$file);
                 $this->appendOutputString('<div class="input-file">');
                 $this->appendOutputString('<form action="process.php" method="post" id="form-'.$counter.'">');
                 $this->appendOutputString('<h5 class="input-file-title"><i class="fa fa-file-text"></i>&nbsp;'.urldecode($file).'<small >'.sprintf("%.2f", ($size / 1000)/1000).'mb</small></h5>');
