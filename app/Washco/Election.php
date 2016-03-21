@@ -110,7 +110,7 @@ class Election {
             $this->appendOutputString('</div><!-- /.row -->');
             $this->appendOutputString('</div><!-- /.container -->');
 
-            if($this->postStatus != 'none'){
+            if($this->postStatus !== 'none'){
                 $this->appendOutputString('<div class="election-status">');
                 $this->appendOutputString('<div class="container">');
                 if($this->postStatus == 'official'){
@@ -119,8 +119,15 @@ class Election {
                 if($this->postStatus == 'unofficial'){
                     $this->appendOutputString('<p class="election-status-copy">Unofficial Washington County Election Results</p>');
                 }
-                if($this->postDate or $this->postTime){
-                    // $this->appendOutputString('<p class="election-status-copy">Unofficial Washington County Election Results</p>');
+                if($this->postDate or ($this->postTime and $this->postTime !== 'none')){
+                    $this->appendOutputString('<p class="election-status-copy">Next update ');
+                    if($this->postDate){
+                        $this->appendOutputString(' on '.$this->postDate);
+                    }
+                    if($this->postTime and $this->postTime !== 'none'){
+                        $this->appendOutputString(' at '.date("g:i A", strtotime($this->postTime.":00")));
+                    }
+                    $this->appendOutputString('</p>');
                 }
                 $this->appendOutputString('</div>');
                 $this->appendOutputString('</div>');
