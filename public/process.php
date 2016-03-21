@@ -10,7 +10,8 @@
      */
     $e = new Washco\Election;
 
-    $output = "No input file";
+    $output = '<p class="alert alert-info">Status: <strong>No input file found</strong>.</p>';
+    $success = false;
 
     if($_POST['file']){
 
@@ -20,10 +21,13 @@
          * Set class variables
          */
         $e->inputDirectory = $data_directory;
-        $e->importFile = $file;
+        $e->inputFile = $file;
         $e->outputDirectory = $output_directory;
         $e->outputFile = $output_file;
         $e->partialsDirectory = $partials_directory;
+        $e->publicDirectory = $public_directory;
+        $e->processedDirectory = $processed_directory;
+        $e->timeStamp = date('Y-m-d-H-i-s'); // year-mm-dd-hh-mm-ss
         $e->appTitle = $app_title;
         $e->logoUrl = $logo_url;
 
@@ -45,22 +49,70 @@
          */
         $e->addPartial('head.html');
         $e->addPartial('nav.html');
-        $e->processImportFile();
+        $e->processInputFile();
         $e->addPartial('foot.html');
 
         /**
-         * Write the completed html string
+         * Write the completed html string, create a preview file, and archive
+         * the xml.
          */
-        $e->writeOutputFile(false);
-        $output = $file." processed";
+        $e->writeOutputFile();
+        $e->archiveXmlFile();
+
+        $output  = '<p class="alert alert-info">Status: <strong>'.$file.'</strong> processed successfully!</p>';
+        $output .= '<p>More deets here.</p>';
+        $success = true;
     }
 
     include($partials_directory.'/head.html');
     include($partials_directory.'/nav.html');
+?>
 
-    echo '<div class="container add-top-padding">';
-    echo '<h2>'.$output.'</h2>';
-    echo '</div>';
+    <div class="container">
 
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://s3.amazonaws.com/washcomultimedia/web/img/logo.png" class="img-responsive img-center img-padded" />
+            </div><!-- /.col -->
+
+            <div class="col-md-9">
+                <div class="page-header">
+                    <h1>ClearBallot XML Processing Page</h1>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+
+
+        <div class="row add-top-padding">
+            <div class="col-md-3">
+                <nav class="hidden-print sidebar">
+                    <?php if($success): ?>
+                    <h4 class="sidebar-heading">Processing Overview</h4>
+                    <p class="instructions">Once a file is processed, the XML file will be moved into the <strong>processed/xml</strong> directory with an appropriate timestamp, and the resulting HTML file will be available to you in the <strong>processed/html</strong> directory.</p>
+                    <h4 class="sidebar-heading">Instructions</h4>
+                    <ol>
+                        <li>If appropriate, select the Next Poll Time for the file you wish to process.</li>
+                        <li>Click Process</li>
+                    </ol>
+                    <?php else: ?>
+                    <h4 class="sidebar-heading">Instructions</h4>
+                    <ol>
+                        <li>Drop one or more ClearBallot formatted XML files into the <strong>input</strong> directory and refresh this page.</li>
+                        <li>Your file(s) will appear in the main area with an option to add a Next Poll Time and a Process action.</li>
+                    </ol>
+                    <?php endif; ?>
+                </nav>
+            </div><!-- /.col -->
+
+            <div class="col-md-9">
+                <div class="content">
+                <?php echo $output; ?>
+                </div><!-- /.content -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+<?php
     include($partials_directory.'/foot.html');
 ?>
