@@ -60,7 +60,7 @@
                     <?php endif; ?>
                 </nav>
                 <p>
-                    <a href="landing.php" class="btn btn-default btn-block"><i class="fa fa-bookmark-o"></i>&nbsp;Generate Landing Page</a>
+                    <a href="landing.php" class="btn btn-default btn-block"><i class="fa fa-globe"></i>&nbsp;Generate Landing Page</a>
                 </p>
             </div><!-- /.col -->
 
