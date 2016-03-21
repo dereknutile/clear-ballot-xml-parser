@@ -7,11 +7,14 @@ class Election {
     public $appTitle = 'Washington County Election Results';
     public $logoUrl = '';
 
+    // path to the /public web directory
+    public $publicDirectory = '';
+
     // Full path to data input directory
     public $inputDirectory = '';
 
     // Name of the input file
-    public $importFile = '';
+    public $inputFile = '';
 
     // Full path to data output directory
     public $outputDirectory = '';
@@ -19,8 +22,14 @@ class Election {
     // Name of the output HTML
     public $outputFile = '';
 
+    // timestamp for prefixing files
+    public $timeStamp = null;
+
     // path to partials
-    public $partialsDirectory;
+    public $partialsDirectory = '';
+
+    // path to processed files directory
+    public $processedDirectory = '';
 
     // posted variables
     public $postStatus = 'none';
@@ -60,12 +69,12 @@ class Election {
      *
      * @return void
      */
-    public function processImportFile(){
+    public function processInputFile(){
         // Set default page title just incase the XML is missing/unreadable
         $page_title = $this->appTitle;
 
         // Load the target xml file into an XML object using simplexml_load_file
-        $xml = simplexml_load_file($this->inputDirectory.$this->importFile);
+        $xml = simplexml_load_file($this->inputDirectory.$this->inputFile);
 
         if($xml){
             /**
@@ -211,7 +220,7 @@ class Election {
      *
      * @param string $string String to append to $this->outputString
      *
-     * @return boolean
+     * @return void
      */
     public function addString($string){
         $this->appendOutputString($string);
@@ -220,16 +229,43 @@ class Election {
     /**
      * Writes content to the output file
      *
-     * @param boolean $append If true appends the output file
+     * @param boolean $preview Copies the processed output file to preview.html
+     *
+     * @return void
+     */
+    public function writeOutputFile($preview = true){
+        file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString);
+        copy($this->outputDirectory.$this->outputFile, $this->processedDirectory.'html/'.$this->timeStamp.'-'.$this->outputFile);
+        if($preview){
+            $this->writePreviewFile();
+        }
+    }
+
+    /**
+     * Copies the processed output file to preview.html
+     *
+     * @param string $file_name Name of the destination preview file
+     *
+     * @return void
+     *
+     */
+    public function writePreviewFile($file_name = 'preview.html'){
+        file_put_contents($this->publicDirectory.$file_name, $this->outputString);
+    }
+
+    /**
+     * Moves the processed XML file to the processed/xml directory with a prefix
+     * like year-mm-dd-hh-mm-ss-input.xml
      *
      * @return boolean
+     *
      */
-    public function writeOutputFile($append = true){
-        if($append){
-            file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString, FILE_APPEND);
-        } else {
-            file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString);
+    public function archiveXmlFile(){
+        $return = false;
+        if (rename($this->inputDirectory.$this->inputFile, $this->processedDirectory.'xml/'.$this->timeStamp.'-'.$this->inputFile)) {
+            $return = true;
         }
+        return $return;
     }
 
     /**
@@ -274,9 +310,9 @@ class Election {
                 $this->appendOutputString('<div class="form-group">');
                 $this->appendOutputString('<label for="status" class="control-label">Choose a Status Banner</label>');
                 $this->appendOutputString('<select name="status" class="form-control">');
-                $this->appendOutputString('<option value="none">No Banner</option>');
                 $this->appendOutputString('<option value="unofficial">Unofficial Results Banner</option>');
                 $this->appendOutputString('<option value="official">Final Results Banner</option>');
+                $this->appendOutputString('<option value="none">No Banner Displayed</option>');
                 $this->appendOutputString('</select>');
                 $this->appendOutputString('</div><!-- /.form-group -->');
 
