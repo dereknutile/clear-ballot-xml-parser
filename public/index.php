@@ -42,13 +42,15 @@
             <div class="col-md-3">
                 <nav class="hidden-print sidebar">
                     <?php if($xml): ?>
+                    <h4 class="sidebar-heading">Parsing Overview</h4>
+                    <p class="instructions">The parsing process takes the ClearBallot XML file and turns it into a simple HTML file that can be reviewed and then posted to the production website.</p>
                     <h4 class="sidebar-heading">Instructions</h4>
                     <ol>
-                        <li>If appropriate, select the Next Poll Time for the file you wish to process.</li>
-                        <li>Click Process</li>
+                        <li>Choose a <strong>Status Banner</strong>.</li>
+                        <li>Optionally enter a day when the next update will occur.</li>
+                        <li>Select the next time an update will occur.</li>
+                        <li>Click <strong>Process</strong> to generate the HTML and preview the output.</li>
                     </ol>
-                    <h4 class="sidebar-heading">Note</h4>
-                    <p class="instructions">Once a file is processed, the XML file will be moved into the <strong>processed/xml</strong> directory with an appropriate timestamp, and the resulting HTML file will be available to you in the <strong>processed/html</strong> directory.</p>
                     <?php else: ?>
                     <h4 class="sidebar-heading">Instructions</h4>
                     <ol>
@@ -57,6 +59,9 @@
                     </ol>
                     <?php endif; ?>
                 </nav>
+                <p>
+                    <a href="landing.php" class="btn btn-default btn-block"><i class="fa fa-bookmark-o"></i>&nbsp;Generate Landing Page</a>
+                </p>
             </div><!-- /.col -->
 
             <div class="col-md-9">
