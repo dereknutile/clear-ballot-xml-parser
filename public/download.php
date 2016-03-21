@@ -1,5 +1,8 @@
 <?php
     $file = "preview.html";
+    if($_GET['file']){
+        $file = urlencode($_GET['file']);
+    }
 
     header("Content-Description: File Transfer");
     header("Content-Type: application/octet-stream");
