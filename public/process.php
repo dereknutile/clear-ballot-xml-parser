@@ -60,7 +60,13 @@
         $e->archiveXmlFile();
 
         $output  = '<p class="alert alert-info">Status: <strong>'.$file.'</strong> processed successfully!</p>';
-        $output .= '<p>More deets here.</p>';
+        $output .= '<h3>Summary</h3>';
+        $output .= '<p>The <strong>'.$file.'</strong> file has been processed and the original has been copied to the archive directory and renamed: <strong>'.$e->timeStamp.'-'.$file.'</strong>.</p>';
+        $output .= '<hr />';
+        $output .= '<div class="input-file-actions">';
+        $output .= '<a class="btn btn-default" href="preview.html" target="_blank"><i class="fa fa-eye"></i>&nbsp;Preview HTML</a>&nbsp;';
+        $output .= '<a class="btn btn-primary" href="download.php"><i class="fa fa-download"></i>&nbsp;Download HTML File</a></p>';
+        $output .= '</div><!-- /.input-file-actions -->';
         $success = true;
     }
 
@@ -102,6 +108,9 @@
                     </ol>
                     <?php endif; ?>
                 </nav>
+                <p>
+                    <a href="landing.php" class="btn btn-default btn-block"><i class="fa fa-globe"></i>&nbsp;Generate Landing Page</a>
+                </p>
             </div><!-- /.col -->
 
             <div class="col-md-9">
