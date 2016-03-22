@@ -10,7 +10,7 @@
 
     // Set file names
     $import_file = 'import.xml';
-    $output_file = 'index.html';
+    $output_file = 'index.htm';
 
     // Set default applications strings
     $app_title = 'Application Title';
