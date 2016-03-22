@@ -35,6 +35,7 @@ class Election {
     public $postStatus = 'none';
     public $postDate = null;
     public $postTime = null;
+    public $postContent = null;
 
     // Array of XML files read from the input directory
     // private $xmlFiles = array();
@@ -236,7 +237,7 @@ class Election {
     /**
      * Writes content to the output file
      *
-     * @param boolean $preview Copies the processed output file to preview.html
+     * @param boolean $preview Copies the processed output file to preview.htm
      *
      * @return void
      */
@@ -249,6 +250,47 @@ class Election {
     }
 
     /**
+     * Writes a landing page output file
+     *
+     * @return void
+     */
+    public function processLandingForm(){
+        $this->appendOutputString('<div class="container container-narrow">');
+        if(strlen($this->logoUrl)>0){
+            $this->appendOutputString('<img src="'.$this->logoUrl.'" class="img-responsive img-center img-padded" />');
+        }
+
+        $this->appendOutputString('<div class="page-header">');
+        $this->appendOutputString('<h1>'.$page_title.'</h1>');
+        $this->appendOutputString('</div>');
+
+        $this->appendOutputString('<p class="alert alert-info">Washington County is currently holding no elections.');
+        if($this->postDate){
+            $this->appendOutputString('<strong>The next election will be held on '.$this->postDate.'</strong>');
+        }
+        $this->appendOutputString('.<p>');
+        $this->appendOutputString(html_entity_decode($this->postContent));
+        $this->appendOutputString('<h3>Archives</h3>');
+        $this->appendOutputString('<p><a href="http://www.co.washington.or.us/AssessmentTaxation/Elections/ElectionsArchive" target="_blank">View the election archives</a></p>');
+        $this->appendOutputString('</div><!-- /.container -->');
+    }
+
+    /**
+     * Writes a landing page output file
+     *
+     * @param boolean $preview Copies the processed output file to landing.htm
+     *
+     * @return void
+     */
+    public function writeLandingPageFile($preview = true){
+        file_put_contents($this->outputDirectory.$this->outputFile, $this->outputString);
+        copy($this->outputDirectory.$this->outputFile, $this->processedDirectory.'html/'.$this->timeStamp.'-'.$this->outputFile);
+        if($preview){
+            $this->writePreviewFile($this->outputFile);
+        }
+    }
+
+    /**
      * Copies the processed output file to preview.html
      *
      * @param string $file_name Name of the destination preview file
@@ -256,7 +298,7 @@ class Election {
      * @return void
      *
      */
-    public function writePreviewFile($file_name = 'preview.html'){
+    public function writePreviewFile($file_name = 'preview.htm'){
         file_put_contents($this->publicDirectory.$file_name, $this->outputString);
     }
 
