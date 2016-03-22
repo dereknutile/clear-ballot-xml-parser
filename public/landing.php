@@ -65,6 +65,13 @@
         </div><!-- /.row -->
 
         <div class="row add-top-padding">
+            <ol class="breadcrumb">
+                <li><a href="<?php echo $base_url; ?>">Home</a></li>
+                <li>Landing Page</li>
+            </ol>
+        </div><!-- /.row -->
+
+        <div class="row">
             <div class="col-md-3">
                 <nav class="hidden-print sidebar">
                     <h4 class="sidebar-heading">Landing Page</h4>
