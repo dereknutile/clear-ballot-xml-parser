@@ -75,26 +75,26 @@
             <div class="col-md-9">
                 <div class="content">
                 <?php if($alert): ?>
-                    <p class="alert alert-info">Landing page successfully generated. <a class="btn btn-primary" href="download.php?file=landing.html"><i class="fa fa-download"></i>&nbsp;Download Landing Page HTML</a></p>
+                    <p class="alert alert-info">Landing page successfully generated. <a class="btn btn-primary" href="download.php?file=landing.htm"><i class="fa fa-download"></i>&nbsp;Download Landing Page HTML</a></p>
                 <?php endif; ?>
                 <div class="input-file">
                     <form action="landing.php" method="post" id="builder">
                         <div class="form-group">
                             <label for="time" class="control-label">Next Election Date (optional)</label>
-                            <input type="text" class="form-control" name="date" placeholder="Thursday, November, 7" value="<?php echo $date; ?>">
+                            <input type="text" class="form-control" name="date" placeholder="Thursday, November, 7" value="<?php echo $_POST['date']; ?>">
                         </div><!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="content" class="control-label">Landing Page Content</label>
                             <textarea class="form-control" rows="3" name="content" id="wysiwyg">
-                                <?php if($content): ?>
-                                    <?php echo $content; ?>
+                                <?php if($_POST['content']): ?>
+                                    <?php echo $_POST['content']; ?>
                                 <?php else: ?>
                                     <h3><?php echo date('Y'); ?> Election Dates Example</h3>
-                                    <p><?php echo date('F, d Y'); ?></p>
-                                    <p><?php echo date('F, d Y'); ?></p>
+                                    <p><?php echo date('F d, Y'); ?></p>
+                                    <p><?php echo date('F d, Y'); ?></p>
                                     <h3><?php echo date('Y', strtotime('+1 year')); ?> Election Dates Example</h3>
-                                    <p><?php echo date('F, d Y', strtotime('+1 year')); ?></p>
+                                    <p><?php echo date('F d, Y', strtotime('+1 year')); ?></p>
                                 <?php endif; ?>
                             </textarea>
                         </div><!-- /.form-group -->

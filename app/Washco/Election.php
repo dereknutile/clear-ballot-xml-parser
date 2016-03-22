@@ -270,7 +270,7 @@ class Election {
         }
         $this->appendOutputString('.<p>');
         $this->appendOutputString(html_entity_decode($this->postContent));
-        $this->appendOutputString('<h3>Archives</h3>');
+        $this->appendOutputString('<h3>Election Archives</h3>');
         $this->appendOutputString('<p><a href="http://www.co.washington.or.us/AssessmentTaxation/Elections/ElectionsArchive" target="_blank">View the election archives</a></p>');
         $this->appendOutputString('</div><!-- /.container -->');
     }
