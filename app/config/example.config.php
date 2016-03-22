@@ -13,6 +13,7 @@
     $output_file = 'index.htm';
 
     // Set default applications strings
+    $base_url = '/';
     $app_title = 'Application Title';
     $logo_url = '/assets/img/logo.png';
 ?>
