@@ -1,34 +1,50 @@
 <?php
 
     $alert = false;
-    if($_POST['date']){
-        $date = htmlentities($_POST['date']);
-        $alert = true;
-    } else {
-        $date = '';
-    }
-
-    if($_POST['content']){
-        $content = htmlentities($_POST['content']);
-        $alert = true;
-    } else {
-        $content = null;
-    }
 
     /**
      * Bootstrap the application
      */
     require(__DIR__.'/../app/bootstrap.php');
 
-    // /**
-    //  * Instantiate the class
-    //  */
-    // $e = new Washco\Election;
+    if (!empty($_POST))
+    {
+        /**
+         * Instantiate the class
+         */
+        $e = new Washco\Election;
 
-    // /**
-    //  * Set class variables
-    //  */
-    // $e->inputDirectory = $data_directory;
+        /**
+         * Set class variables
+         */
+        $e->outputDirectory = $output_directory;
+        $e->outputFile = 'landing.htm';
+        $e->partialsDirectory = $partials_directory;
+        $e->publicDirectory = $public_directory;
+        $e->processedDirectory = $processed_directory;
+        $e->timeStamp = date('Y-m-d-H-i-s'); // year-mm-dd-hh-mm-ss
+        $e->appTitle = $app_title;
+        $e->logoUrl = $logo_url;
+
+        if($_POST['date']){
+            $e->postDate = htmlentities($_POST['date']);
+            $alert = true;
+        }
+
+        if($_POST['content']){
+            $e->postContent = htmlentities($_POST['content']);
+            $alert = true;
+        }
+
+        /**
+         * Build the html string
+         */
+        $e->addPartial('head.html');
+        $e->addPartial('nav.html');
+        $e->processLandingForm();
+        $e->addPartial('foot.html');
+        $e->writeLandingPageFile();
+    }
 
     include($partials_directory.'/head.html');
     include($partials_directory.'/nav.html');
