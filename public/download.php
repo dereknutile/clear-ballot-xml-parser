@@ -1,5 +1,5 @@
 <?php
-    $file = "preview.html";
+    $file = "preview.htm";
     if($_GET['file']){
         $file = urlencode($_GET['file']);
     }

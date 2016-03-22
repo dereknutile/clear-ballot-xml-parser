@@ -64,7 +64,7 @@
         $output .= '<p>The <strong>'.$file.'</strong> file has been processed and the original has been copied to the archive directory and renamed: <strong>'.$e->timeStamp.'-'.$file.'</strong>.</p>';
         $output .= '<hr />';
         $output .= '<div class="input-file-actions">';
-        $output .= '<a class="btn btn-default" href="preview.html" target="_blank"><i class="fa fa-eye"></i>&nbsp;Preview HTML</a>&nbsp;';
+        $output .= '<a class="btn btn-default" href="preview.htm" target="_blank"><i class="fa fa-eye"></i>&nbsp;Preview HTML</a>&nbsp;';
         $output .= '<a class="btn btn-primary" href="download.php"><i class="fa fa-download"></i>&nbsp;Download HTML File</a></p>';
         $output .= '</div><!-- /.input-file-actions -->';
         $success = true;
