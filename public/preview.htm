@@ -13,7 +13,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://s3.amazonaws.com/washcomultimedia/web/css/custom.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -115,7 +115,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand text-shadow-dark" href="/">Washington County Elections</a>
+                <a class="navbar-brand text-shadow-dark" href="http://www.washingtoncountyelectionresults.com/">Washington County Elections</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -145,10 +145,6 @@
 <div class="election-status">
 <div class="container">
 <p class="election-status-copy">Unofficial Washington County Election Results</p>
-<p class="election-status-copy">Next update 
- on Test
- at 7:00 PM
-</p>
 </div>
 </div>
 <div class="container add-top-padding">
@@ -278,6 +274,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+
     <script>
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
@@ -293,8 +291,22 @@
                 }
             });
         });
+        $('#wysiwyg').summernote({
+            height: 300,
+            minHeight: null,
+            maxHeight: null,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['style']],
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['view', ['codeview']],
+                // ['font', ['strikethrough', 'superscript', 'subscript']],
+                // ['fontsize', ['fontsize']],
+                // ['para', ['ul', 'ol', 'paragraph']],
+                // ['height', ['height']]
+            ]
+        });
     </script>
-
 </body>
 </html>
 
