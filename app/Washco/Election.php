@@ -189,7 +189,7 @@ class Election {
             foreach ($xml->Election->ContestList->Contest as $contest) {
                 $this->appendOutputString('<a name="id-'.$contest['id'].'"></a>');
                 $this->appendOutputString('<div class="contest">');
-                $this->appendOutputString('<h5 class="contest-title">'.$contest['title'].'</h5>');
+                $this->appendOutputString('<h5 class="contest-title">'.$contest['title'].' (Vote for ' .$contest['voteFor'].')</h5>');
                 $this->appendOutputString('<p>Total Ballots Cast: <strong>'.$contest['ballotsCast'].'</strong></p>');
 
                 foreach($contest->Candidate as $candidate){
